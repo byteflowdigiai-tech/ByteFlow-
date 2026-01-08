@@ -89,9 +89,12 @@ export default function Footer() {
                 <Phone className="w-5 h-5 text-green-emerald" />
                 +91 6900105606
               </a>
-              <div className="flex items-center gap-3 text-muted-foreground">
-                <MapPin className="w-5 h-5 text-blue-aqua" />
-                Malleshwaram, Bengaluru
+              <div className="flex items-start gap-3 text-muted-foreground">
+                <MapPin className="w-5 h-5 text-blue-aqua shrink-0 mt-1" />
+                <div className="text-sm">
+                  <p><span className="font-semibold text-foreground">Head Office:</span> Malleshwaram, Bangalore</p>
+                  <p><span className="font-semibold text-foreground">Branch Office:</span> Guwahati</p>
+                </div>
               </div>
             </div>
           </div>
