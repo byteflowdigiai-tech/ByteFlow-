@@ -119,11 +119,11 @@ export default function OurWork() {
                         </p>
                     </div>
 
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 auto-rows-[300px]">
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                         {itProjects.map((project, i) => (
                             <motion.div
                                 key={project.id}
-                                className={`group relative rounded-3xl overflow-hidden cursor-pointer ${i === 0 || i === 3 ? 'md:col-span-2' : ''}`}
+                                className={`group relative rounded-3xl overflow-hidden cursor-pointer h-auto md:aspect-auto md:h-[300px] ${i === 0 || i === 3 ? 'md:col-span-2' : ''}`}
                                 initial={{ opacity: 0, y: 20 }}
                                 whileInView={{ opacity: 1, y: 0 }}
                                 viewport={{ once: true }}
@@ -133,7 +133,7 @@ export default function OurWork() {
                                 <img
                                     src={project.image}
                                     alt={project.title}
-                                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                                    className="w-full h-auto transition-transform duration-700 group-hover:scale-110"
                                 />
                                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
                                     <h3 className="text-2xl font-bold text-white mb-2">{project.title}</h3>
@@ -160,11 +160,11 @@ export default function OurWork() {
                         </p>
                     </div>
 
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 auto-rows-[300px]">
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                         {digitalProjects.map((project, i) => (
                             <motion.div
                                 key={project.id}
-                                className={`group relative rounded-3xl overflow-hidden cursor-pointer ${i === 1 ? 'md:col-span-2' : ''}`}
+                                className={`group relative rounded-3xl overflow-hidden cursor-pointer aspect-[4/3] md:aspect-auto md:h-[300px] ${i === 1 ? 'md:col-span-2' : ''}`}
                                 initial={{ opacity: 0, y: 20 }}
                                 whileInView={{ opacity: 1, y: 0 }}
                                 viewport={{ once: true }}
@@ -174,7 +174,7 @@ export default function OurWork() {
                                 <img
                                     src={project.image}
                                     alt={project.title}
-                                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                                    className="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-110"
                                 />
                                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
                                     <h3 className="text-2xl font-bold text-white mb-2">{project.title}</h3>
