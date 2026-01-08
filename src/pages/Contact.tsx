@@ -4,7 +4,15 @@ import PageHero from '@/components/ui/PageHero';
 import ConsultationForm from '@/components/ui/ConsultationForm';
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from '@/components/ui/dialog';
 
-const contactInfo = [
+interface ContactItem {
+  icon: React.ComponentType<React.SVGProps<SVGSVGElement>>;
+  label: string;
+  value: string;
+  href: string;
+  mapUrl?: string;
+}
+
+const contactInfo: ContactItem[] = [
   { icon: Mail, label: 'Email', value: 'byteflowdigiai@gmail.com', href: 'mailto:byteflowdigiai@gmail.com' },
   { icon: Phone, label: 'Phone', value: '+91 6900105606', href: 'tel:+91 6900105606' },
   {
@@ -24,7 +32,7 @@ const contactInfo = [
 ];
 
 export default function Contact() {
-  const [activeMap, setActiveMap] = useState<typeof contactInfo[2] | null>(null);
+  const [activeMap, setActiveMap] = useState<ContactItem | null>(null);
 
   return (
     <main>
@@ -97,7 +105,7 @@ export default function Contact() {
                     </div>
                     {item.label.includes('Address') && (
                       <button
-                        onClick={() => setActiveMap(item as any)}
+                        onClick={() => setActiveMap(item)}
                         className="text-[10px] font-bold text-green-emerald flex items-center gap-1 hover:underline uppercase tracking-tighter"
                       >
                         <ExternalLink className="w-3 h-3" /> View on Map
@@ -126,7 +134,7 @@ export default function Contact() {
           <div className="w-full h-[70vh] bg-black">
             {activeMap && (
               <iframe
-                src={(activeMap as any).mapUrl}
+                src={activeMap?.mapUrl}
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
