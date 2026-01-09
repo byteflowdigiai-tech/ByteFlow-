@@ -92,7 +92,7 @@ export default function Footer() {
               <div className="flex items-start gap-3 text-muted-foreground">
                 <MapPin className="w-5 h-5 text-blue-aqua shrink-0 mt-1" />
                 <div className="text-sm">
-                  <p><span className="font-semibold text-foreground">Head Office:</span> Malleshwaram, Bangalore</p>
+                  <p><span className="font-semibold text-foreground">Head Office:</span> Bangalore</p>
                   <p><span className="font-semibold text-foreground">Branch Office:</span> Guwahati</p>
                 </div>
               </div>

@@ -17,7 +17,7 @@ const contactInfo = [
   {
     icon: MapPin,
     label: 'Sub Branch Address',
-    value: 'ByteFlow , 101 , 1st Floor , IIT Guwahati Research Part , 781034',
+    value: 'ByteFlow , 101 , 1st Floor , Guwahati Research Park , 781034',
     mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3580.332349319349!2d91.6888463753599!3d26.192318077085734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x375a50785718765f%3A0xc6a8f3523588f72c!2sIndian%20Institute%20of%20Technology%20Guwahati!5e0!3m2!1sen!2sin!4v1704473800000!5m2!1sen!2sin",
     href: '#'
   },
@@ -71,7 +71,7 @@ export default function Contact() {
                   <div className="absolute inset-0 flex flex-col items-center justify-center p-4 text-center">
                     <MapPin className="w-5 h-5 text-blue-400 mb-2 group-hover:scale-110 transition-transform" />
                     <h4 className="text-xs font-bold">Sub Branch</h4>
-                    <p className="text-[8px] text-muted-foreground uppercase tracking-widest mt-1">IIT Guwahati</p>
+                    <p className="text-[8px] text-muted-foreground uppercase tracking-widest mt-1">Guwahati</p>
                   </div>
                 </div>
               </div>
