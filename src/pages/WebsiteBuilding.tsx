@@ -45,23 +45,26 @@ const process = [
 
 const TechHotspot = ({ top, left, width, height, label }: { top: string, left: string, width: string, height: string, label: string }) => (
   <motion.div
-    className="absolute cursor-pointer"
+    className="absolute cursor-pointer flex items-center justify-center"
     style={{ top, left, width, height }}
     initial="initial"
     whileHover="hover"
+    whileTap="hover"
   >
     <motion.div
       variants={{
-        initial: { opacity: 0, y: 10, scale: 0.8 },
-        hover: { opacity: 1, y: 0, scale: 1 }
+        initial: { opacity: 0, scale: 0.8, y: 10 },
+        hover: { opacity: 1, scale: 1, y: 0 }
       }}
-      transition={{ duration: 0.2 }}
-      className="absolute -top-12 left-1/2 -translate-x-1/2 bg-black/80 backdrop-blur-md text-white text-xs font-medium px-3 py-1.5 rounded-lg border border-white/10 whitespace-nowrap z-50 pointer-events-none"
+      transition={{ type: "spring", stiffness: 300, damping: 20 }}
+      className="absolute -top-12 left-1/2 -translate-x-1/2 bg-black/90 backdrop-blur-md text-white text-xs font-semibold px-3 py-1.5 rounded-lg border border-white/20 whitespace-nowrap z-50 pointer-events-none shadow-xl"
     >
       {label}
-      <div className="absolute -bottom-1 left-1/2 -translate-x-1/2 w-2 h-2 bg-black/80 rotate-45 border-r border-b border-white/10" />
+      <div className="absolute -bottom-1 left-1/2 -translate-x-1/2 w-2 h-2 bg-black/90 rotate-45 border-r border-b border-white/20" />
     </motion.div>
-    <div className="w-full h-full rounded-full bg-white/0 hover:bg-white/10 transition-colors duration-300" />
+
+    {/* Interactivity Indicator for Mobile */}
+    <div className="lg:hidden w-2 h-2 rounded-full bg-blue-cyan/40 animate-ping" />
   </motion.div>
 );
 
@@ -162,39 +165,35 @@ export default function WebsiteBuilding() {
               </div>
             </div>
             <div className="relative group">
-              <div className="aspect-video rounded-2xl overflow-hidden glass shadow-2xl transition-transform duration-500 group-hover:scale-[1.02] relative">
-                <img
-                  src={techStackImage}
-                  alt="Modern Tech Stack - React, Next.js, TypeScript"
-                  className="w-full h-full object-cover"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-blue-deep/40 to-transparent pointer-events-none" />
+              {/* Outer container WITHOUT overflow-hidden to allow tooltips to pop out */}
+              <div className="aspect-video rounded-2xl relative transition-transform duration-500 group-hover:scale-[1.02]">
+                {/* Inner container with glass and shadow */}
+                <div className="absolute inset-0 rounded-2xl overflow-hidden glass shadow-2xl">
+                  <img
+                    src={techStackImage}
+                    alt="Modern Tech Stack - React, Next.js, TypeScript"
+                    className="w-full h-full object-cover"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-blue-deep/40 to-transparent pointer-events-none" />
+                </div>
 
                 {/* Interactive Hotspots Layer */}
-                <div className="absolute inset-0 z-10">
-                  {/* Next.js (Center) */}
+                <div className="absolute inset-0 z-20">
                   <TechHotspot top="30%" left="42%" width="16%" height="40%" label="Next.js" />
-
-                  {/* React (Top Left) */}
                   <TechHotspot top="10%" left="22%" width="14%" height="25%" label="React" />
-
-                  {/* TypeScript (Top Right) */}
                   <TechHotspot top="10%" left="64%" width="14%" height="25%" label="TypeScript" />
-
-                  {/* Tailwind (Left) */}
                   <TechHotspot top="40%" left="8%" width="14%" height="25%" label="Tailwind CSS" />
-
-                  {/* Node.js (Right) */}
                   <TechHotspot top="40%" left="78%" width="14%" height="25%" label="Node.js" />
-
-                  {/* PostgreSQL (Bottom Left) */}
                   <TechHotspot top="65%" left="25%" width="14%" height="25%" label="PostgreSQL" />
-
-                  {/* Vercel (Bottom Right) */}
                   <TechHotspot top="65%" left="60%" width="14%" height="25%" label="Vercel" />
                 </div>
+
+                {/* Mobile Hint */}
+                <div className="absolute -bottom-10 left-0 right-0 text-center lg:hidden">
+                  <p className="text-xs text-muted-foreground animate-pulse">Tap icons to see tech details</p>
+                </div>
               </div>
-              <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-blue-cyan/20 rounded-full blur-2xl animate-pulse" />
+              <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-blue-cyan/20 rounded-full blur-2xl animate-pulse -z-10" />
             </div>
           </div>
         </div>
