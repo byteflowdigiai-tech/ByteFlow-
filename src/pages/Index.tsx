@@ -62,9 +62,9 @@ const marketingServices = [
 ];
 
 const stats = [
-  { value: '500+', label: 'Projects Delivered' },
+  { value: '35+', label: 'Projects Delivered' },
   { value: '98%', label: 'Client Satisfaction' },
-  { value: '50M+', label: 'Revenue Generated' },
+  { value: '15+', label: 'Industries Served' },
   { value: '24/7', label: 'Support Available' },
 ];
 
