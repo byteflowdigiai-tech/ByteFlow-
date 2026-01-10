@@ -32,9 +32,9 @@ const process = [
 ];
 
 const results = [
-  { metric: '250%', label: 'Average Traffic Increase', description: 'Within 6 months' },
+  { metric: '150%+', label: 'Average Traffic Increase', description: 'Within 6 months' },
   { metric: 'Top 10', label: 'Keyword Rankings', description: 'For target keywords' },
-  { metric: '180%', label: 'Organic Lead Growth', description: 'Year over year' },
+  { metric: '100%+', label: 'Organic Lead Growth', description: 'Year over year' },
 ];
 
 export default function SEO() {

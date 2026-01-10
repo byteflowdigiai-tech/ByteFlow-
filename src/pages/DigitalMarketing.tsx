@@ -53,10 +53,10 @@ const features = [
 ];
 
 const results = [
-  { metric: '150%', label: 'Average Traffic Increase' },
-  { metric: '3.5x', label: 'ROAS Improvement' },
-  { metric: '200+', label: 'Clients Served' },
-  { metric: '45%', label: 'Conversion Rate Boost' },
+  { metric: '120%+', label: 'Average Traffic Increase' },
+  { metric: '3x+', label: 'ROAS Improvement' },
+  { metric: '35+', label: 'Projects Completed' },
+  { metric: '25%+', label: 'Conversion Rate Boost' },
 ];
 
 export default function DigitalMarketing() {

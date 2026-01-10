@@ -32,10 +32,10 @@ const platforms = [
 ];
 
 const results = [
-  { metric: '4.2x', label: 'Average ROAS' },
-  { metric: '-40%', label: 'Cost Per Lead' },
-  { metric: '350%', label: 'Traffic Increase' },
-  { metric: '2.5x', label: 'Conversion Rate' },
+  { metric: '3.5x+', label: 'Average ROAS' },
+  { metric: '-30%', label: 'Cost Per Lead' },
+  { metric: '150%+', label: 'Traffic Increase' },
+  { metric: '2x+', label: 'Conversion Rate' },
 ];
 
 export default function PerformanceMarketing() {
