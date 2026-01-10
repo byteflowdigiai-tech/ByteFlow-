@@ -3,6 +3,7 @@ import {
   Target, TrendingUp, Rocket, BarChart3, Users,
   ArrowRight, CheckCircle
 } from 'lucide-react';
+import SEO from '@/components/SEO';
 import { Button } from '@/components/ui/button';
 import PageHero from '@/components/ui/PageHero';
 import ServiceCard from '@/components/ui/ServiceCard';
@@ -61,6 +62,12 @@ const results = [
 export default function DigitalMarketing() {
   return (
     <main>
+      <SEO
+        title="Digital Marketing Services - Drive Growth & ROI"
+        description="Data-driven digital marketing services to accelerate your business growth. Expertise in SEO, social media, performance marketing, and comprehensive growth strategies."
+        keywords="digital marketing, online marketing services, digital marketing agency, marketing strategy, ROI-focused marketing"
+        canonicalUrl="https://byteflow-digiai.tech/digital-marketing"
+      />
       <PageHero
         badge="Digital Marketing"
         title="Accelerate"

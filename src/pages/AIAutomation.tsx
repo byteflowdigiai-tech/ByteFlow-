@@ -4,6 +4,7 @@ import {
   Zap, Bot, Workflow, Brain, MessageSquare,
   ArrowRight, CheckCircle, Cog, LineChart
 } from 'lucide-react';
+import SEO from '@/components/SEO';
 import { Button } from '@/components/ui/button';
 import PageHero from '@/components/ui/PageHero';
 import FeatureGrid from '@/components/ui/FeatureGrid';
@@ -62,6 +63,12 @@ const benefits = [
 export default function AIAutomation() {
   return (
     <main>
+      <SEO
+        title="AI & Automation - Intelligent Business Solutions"
+        description="Transform your business with AI-powered automation. Streamline operations, reduce costs, and boost productivity with ByteFlow's intelligent automation solutions."
+        keywords="AI automation, artificial intelligence, business automation, intelligent automation, workflow automation, AI solutions"
+        canonicalUrl="https://byteflow-digiai.tech/it-solutions/ai-automation"
+      />
       <PageHero
         badge="AI & Automation"
         title="Supercharge Your Business with"

@@ -1,10 +1,17 @@
 import { motion } from 'framer-motion';
+import SEO from '@/components/SEO';
 import PageHero from '@/components/ui/PageHero';
 import ConsultationForm from '@/components/ui/ConsultationForm';
 
 export default function BookConsultation() {
   return (
     <main>
+      <SEO
+        title="Book a Free Consultation - Start Your Digital Journey"
+        description="Schedule a free consultation with ByteFlow DigiAI experts. Discuss your IT solutions, digital marketing needs, and get a customized strategy for your business growth."
+        keywords="free consultation, digital marketing consultation, IT services consultation, book consultation ByteFlow, business growth strategy"
+        canonicalUrl="https://byteflow-digiai.tech/book-consultation"
+      />
       <PageHero
         badge="Book a Consultation"
         title="Let's Discuss Your"

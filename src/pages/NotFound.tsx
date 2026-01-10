@@ -2,6 +2,7 @@ import { Link, useLocation } from "react-router-dom";
 import { useEffect } from "react";
 import { motion } from "framer-motion";
 import { Home } from "lucide-react";
+import SEO from "@/components/SEO";
 import { Button } from "@/components/ui/button";
 
 const NotFound = () => {
@@ -13,6 +14,12 @@ const NotFound = () => {
 
   return (
     <main className="min-h-screen flex items-center justify-center bg-gradient-hero pt-20">
+      <SEO
+        title="Page Not Found - 404 Error"
+        description="The page you're looking for doesn't exist. Return to ByteFlow homepage to explore our IT solutions and digital marketing services."
+        noindex={true}
+        canonicalUrl="https://byteflow-digiai.tech/404"
+      />
       <div className="absolute inset-0 bg-grid opacity-30" />
       <div className="relative container mx-auto px-4 text-center">
         <motion.div

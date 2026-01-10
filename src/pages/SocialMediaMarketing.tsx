@@ -4,6 +4,7 @@ import {
     Share2, Users, TrendingUp, MessageCircle, Camera,
     ArrowRight, CheckCircle, Heart, Target, Zap
 } from 'lucide-react';
+import SEO from '@/components/SEO';
 import { Button } from '@/components/ui/button';
 import PageHero from '@/components/ui/PageHero';
 import FeatureGrid from '@/components/ui/FeatureGrid';
@@ -44,6 +45,12 @@ const benefits = [
 export default function SocialMediaMarketing() {
     return (
         <main>
+            <SEO
+                title="Social Media Marketing - Build Engaged Communities"
+                description="Expert social media marketing services across all major platforms. Create viral content, build engaged communities, and drive conversions through strategic social media management."
+                keywords="social media marketing, social media management, Facebook marketing, Instagram marketing, LinkedIn marketing, viral content"
+                canonicalUrl="https://byteflow-digiai.tech/digital-marketing/social-media-marketing"
+            />
             <PageHero
                 badge="Social Media Marketing"
                 title="Grow Your Brand with"

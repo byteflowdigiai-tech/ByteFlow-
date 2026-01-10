@@ -4,6 +4,7 @@ import {
   Rocket, Target, TrendingUp, Users, Lightbulb,
   ArrowRight, CheckCircle, BarChart3, Compass
 } from 'lucide-react';
+import SEO from '@/components/SEO';
 import { Button } from '@/components/ui/button';
 import PageHero from '@/components/ui/PageHero';
 import FeatureGrid from '@/components/ui/FeatureGrid';
@@ -54,6 +55,12 @@ const phases = [
 export default function GrowthStrategy() {
   return (
     <main>
+      <SEO
+        title="Growth Strategy - Scale Your Business Sustainably"
+        description="Comprehensive growth strategies to scale your brand sustainably. Data-driven frameworks, market analysis, and strategic planning for long-term business success."
+        keywords="growth strategy, business growth, scaling strategy, market expansion, strategic planning, sustainable growth"
+        canonicalUrl="https://byteflow-digiai.tech/digital-marketing/growth-strategy"
+      />
       <PageHero
         badge="Growth Strategy"
         title="Build a Framework for"

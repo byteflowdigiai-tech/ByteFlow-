@@ -4,6 +4,7 @@ import {
   Code2, Smartphone, Gauge, Shield, Paintbrush,
   ArrowRight, CheckCircle, Layers, Zap
 } from 'lucide-react';
+import SEO from '@/components/SEO';
 import { Button } from '@/components/ui/button';
 import techStackImage from '@/assets/tech-stack.png';
 import PageHero from '@/components/ui/PageHero';
@@ -71,6 +72,12 @@ const TechHotspot = ({ top, left, width, height, label }: { top: string, left: s
 export default function WebsiteBuilding() {
   return (
     <main>
+      <SEO
+        title="Website Building - Custom Web Development Services"
+        description="Professional website building services with modern technologies. We create responsive, high-performance websites optimized for speed, conversions, and user experience."
+        keywords="website building, custom web development, responsive website design, web development services, professional website development"
+        canonicalUrl="https://byteflow-digiai.tech/it-solutions/website-building"
+      />
       <PageHero
         badge="Website Building"
         title="Stunning Websites That"

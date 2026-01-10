@@ -3,6 +3,7 @@ import {
   Code2, TrendingUp, Zap, Shield, Users, BarChart3,
   Globe, Rocket, Target, Award, Clock, CheckCircle, Share2
 } from 'lucide-react';
+import SEO from '@/components/SEO';
 import Counter from '@/components/ui/Counter';
 import Hero from '@/components/ui/Hero';
 import ServiceCard from '@/components/ui/ServiceCard';
@@ -77,6 +78,12 @@ const whyChooseUs = [
 export default function Index() {
   return (
     <main>
+      <SEO
+        title="Powering the Future of Digital Innovation"
+        description="ByteFlow delivers cutting-edge IT solutions and digital marketing services. Transform your business with AI automation, web development, SEO, and growth strategies."
+        keywords="IT solutions, digital marketing, AI automation, web development, SEO, performance marketing, social media marketing, growth strategy, ByteFlow DigiAI"
+        canonicalUrl="https://byteflow-digiai.tech/"
+      />
       {/* Hero Section */}
       <Hero />
 

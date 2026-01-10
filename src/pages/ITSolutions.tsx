@@ -4,6 +4,7 @@ import {
     Code2, Zap, Globe, Shield, Gauge, Database,
     ArrowRight, CheckCircle
 } from 'lucide-react';
+import SEO from '@/components/SEO';
 import { Button } from '@/components/ui/button';
 import PageHero from '@/components/ui/PageHero';
 import ServiceCard from '@/components/ui/ServiceCard';
@@ -58,6 +59,12 @@ const benefits = [
 export default function ITSolutions() {
     return (
         <main>
+            <SEO
+                title="IT Solutions - Custom Software & Technology Services"
+                description="ByteFlow delivers enterprise-grade IT solutions including custom web development, AI automation, and digital transformation services. Scale your business with cutting-edge technology."
+                keywords="IT solutions, custom software development, enterprise IT services, technology consulting, digital transformation"
+                canonicalUrl="https://byteflow-digiai.tech/it-solutions"
+            />
             <PageHero
                 badge="IT & AI Solutions"
                 title="Build"

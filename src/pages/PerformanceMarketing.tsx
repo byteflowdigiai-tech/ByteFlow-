@@ -4,6 +4,7 @@ import {
   TrendingUp, Target, DollarSign, BarChart3, Users,
   ArrowRight, CheckCircle, Zap, PieChart
 } from 'lucide-react';
+import SEO from '@/components/SEO';
 import { Button } from '@/components/ui/button';
 import PageHero from '@/components/ui/PageHero';
 import FeatureGrid from '@/components/ui/FeatureGrid';
@@ -40,6 +41,12 @@ const results = [
 export default function PerformanceMarketing() {
   return (
     <main>
+      <SEO
+        title="Performance Marketing - ROI-Focused Ad Campaigns"
+        description="Performance-based marketing campaigns that deliver measurable ROI. Expert management of Google Ads, Meta Ads, and multi-channel paid advertising campaigns."
+        keywords="performance marketing, Google Ads, Meta Ads, PPC advertising, paid advertising, ROI marketing, conversion optimization"
+        canonicalUrl="https://byteflow-digiai.tech/digital-marketing/performance-marketing"
+      />
       <PageHero
         badge="Performance Marketing"
         title="Maximize ROI with"

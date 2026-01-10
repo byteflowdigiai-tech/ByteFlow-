@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { Users, Target, Award, Rocket } from 'lucide-react';
+import SEO from '@/components/SEO';
 import PageHero from '@/components/ui/PageHero';
 import CTASection from '@/components/ui/CTASection';
 import ctaAi from '@/assets/cta-ai.png';
@@ -18,6 +19,12 @@ const values = [
 export default function About() {
   return (
     <main>
+      <SEO
+        title="About Us - Your Partner in Innovation"
+        description="Byteflow offers a comprehensive suite of IT and Automation Solutions alongside Digital Media Marketing. We create high-impact posters, manage social media, and run high-conversion ad campaigns."
+        keywords="about ByteFlow, IT automation, digital media marketing, social media management, ad campaigns, web development company"
+        canonicalUrl="https://byteflow-digiai.tech/about"
+      />
       <PageHero
         badge="About ByteFlow DigiAI"
         title="Your Partner in"

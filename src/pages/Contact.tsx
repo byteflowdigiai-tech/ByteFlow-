@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Mail, Phone, MapPin, ExternalLink, Maximize2 } from 'lucide-react';
+import SEO from '@/components/SEO';
 import PageHero from '@/components/ui/PageHero';
 import ConsultationForm from '@/components/ui/ConsultationForm';
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from '@/components/ui/dialog';
@@ -28,6 +29,12 @@ export default function Contact() {
 
   return (
     <main>
+      <SEO
+        title="Contact Us - Get in Touch with ByteFlow"
+        description="Contact ByteFlow DigiAI for IT solutions and digital marketing services. Main office in Bengaluru, branch in Guwahati. Email: byteflowdigiai@gmail.com | Phone: +91 6900105606"
+        keywords="contact ByteFlow, IT services Bengaluru, digital marketing agency contact, ByteFlow office Bengaluru, ByteFlow Guwahati"
+        canonicalUrl="https://byteflow-digiai.tech/contact"
+      />
       <PageHero
         badge="Contact Us"
         title="Get in"

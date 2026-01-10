@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
+import SEO from '@/components/SEO';
 import PageHero from '@/components/ui/PageHero';
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from '@/components/ui/dialog';
 import { Badge } from '@/components/ui/badge';
@@ -96,6 +97,12 @@ export default function OurWork() {
 
     return (
         <main className="min-h-screen bg-background">
+            <SEO
+                title="Our Work - Portfolio & Case Studies"
+                description="Explore ByteFlow's portfolio of successful IT solutions and digital marketing campaigns. See how we've helped businesses transform digitally and achieve measurable growth."
+                keywords="ByteFlow portfolio, IT projects, digital marketing case studies, web development portfolio, successful campaigns"
+                canonicalUrl="https://byteflow-digiai.tech/our-work"
+            />
             <PageHero
                 title="Our"
                 titleHighlight="Work"

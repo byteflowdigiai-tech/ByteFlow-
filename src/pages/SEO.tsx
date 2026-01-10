@@ -4,6 +4,7 @@ import {
   Target, Search, FileText, Link2, BarChart3,
   ArrowRight, CheckCircle, TrendingUp, Globe
 } from 'lucide-react';
+import SEOHead from '@/components/SEO';
 import { Button } from '@/components/ui/button';
 import PageHero from '@/components/ui/PageHero';
 import FeatureGrid from '@/components/ui/FeatureGrid';
@@ -39,6 +40,12 @@ const results = [
 export default function SEO() {
   return (
     <main>
+      <SEOHead
+        title="SEO Services - Boost Your Organic Traffic & Rankings"
+        description="Professional SEO services to increase your search engine rankings and organic traffic. Data-driven strategies, technical SEO, content optimization, and link building."
+        keywords="SEO services, search engine optimization, organic traffic, keyword optimization, SEO agency, link building, technical SEO"
+        canonicalUrl="https://byteflow-digiai.tech/digital-marketing/seo"
+      />
       <PageHero
         badge="SEO Services"
         title="Dominate Search with"
