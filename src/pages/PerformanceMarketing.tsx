@@ -8,6 +8,7 @@ import SEO from '@/components/SEO';
 import { Button } from '@/components/ui/button';
 import PageHero from '@/components/ui/PageHero';
 import FeatureGrid from '@/components/ui/FeatureGrid';
+import Counter from '@/components/ui/Counter';
 import CTASection from '@/components/ui/CTASection';
 import platformExpertiseImage from '@/assets/social-media-platforms.jpg';
 import ctaPerformance1 from '@/assets/cta-performance-1.jpg';
@@ -74,10 +75,10 @@ export default function PerformanceMarketing() {
       <section className="py-16 bg-card border-y border-border">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            {results.map((item) => (
+            {results.map((item, index) => (
               <div key={item.label} className="text-center">
                 <div className="font-display text-4xl md:text-5xl font-bold text-gradient-green mb-2">
-                  {item.metric}
+                  <Counter value={item.metric} delay={index * 0.2} />
                 </div>
                 <div className="text-muted-foreground text-sm">{item.label}</div>
               </div>

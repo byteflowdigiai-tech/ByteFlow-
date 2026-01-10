@@ -8,6 +8,7 @@ import SEO from '@/components/SEO';
 import { Button } from '@/components/ui/button';
 import PageHero from '@/components/ui/PageHero';
 import FeatureGrid from '@/components/ui/FeatureGrid';
+import Counter from '@/components/ui/Counter';
 import CTASection from '@/components/ui/CTASection';
 import aiAdvantageInfographic from '@/assets/ai-advantage-infographic.jpg';
 import ctaAi1 from '@/assets/cta-ai-1.jpg';
@@ -131,7 +132,9 @@ export default function AIAutomation() {
                 <div className="flex items-start justify-between mb-4">
                   <h3 className="font-display text-xl font-semibold">{useCase.title}</h3>
                   <div className="text-right">
-                    <div className="text-3xl font-display font-bold text-blue-cyan">{useCase.stat}</div>
+                    <div className="text-3xl font-display font-bold text-blue-cyan">
+                      <Counter value={useCase.stat} delay={index * 0.1} />
+                    </div>
                     <div className="text-sm text-muted-foreground">{useCase.statLabel}</div>
                   </div>
                 </div>
