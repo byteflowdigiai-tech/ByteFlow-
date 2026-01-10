@@ -13,7 +13,7 @@ interface SEOProps {
 export default function SEO({
     title,
     description,
-    keywords = 'ByteFlow, ByteFlow DigiAi, ByteFlowDigi, AI Flow, Byte, ByteFlow AI, IT solutions, digital marketing, AI automation, web development, SEO, performance marketing',
+    keywords = 'ByteFlow, ByteFlow DigiAi, ByteFlowDigi, AI Flow, Byte, ByteFlow AI, website building in Guwahati, AI in Guwahati, Digital Marketing in Guwahati, IT company in Guwahati, software company in Guwahati, IT solutions, digital marketing, AI automation, web development, SEO, performance marketing',
     ogImage = 'https://byteflowdigiai.com/logo.jpg',
     ogType = 'website',
     canonicalUrl,
@@ -73,7 +73,16 @@ export default function SEO({
                         "alternateName": "ByteFlow",
                         "url": "https://byteflowdigiai.com",
                         "logo": "https://byteflowdigiai.com/logo.jpg",
-                        "description": "ByteFlow DigiAi delivers cutting-edge IT solutions and digital marketing services."
+                        "description": "ByteFlow DigiAi delivers cutting-edge IT solutions and digital marketing services.",
+                        "contactPoint": [
+                            {
+                                "@type": "ContactPoint",
+                                "telephone": "+91 6900105606",
+                                "contactType": "customer service",
+                                "areaServed": ["IN"],
+                                "availableLanguage": "en"
+                            }
+                        ]
                     }
                 `}
             </script>
@@ -86,6 +95,46 @@ export default function SEO({
                         "alternateName": "ByteFlow",
                         "url": "https://byteflowdigiai.com"
                     }
+                `}
+            </script>
+            {/* Local Business Schema for Branches */}
+            <script type="application/ld+json">
+                {`
+                    [
+                        {
+                            "@context": "https://schema.org",
+                            "@type": "ProfessionalService",
+                            "name": "ByteFlow DigiAi - Bengaluru",
+                            "image": "https://byteflowdigiai.com/logo.jpg",
+                            "url": "https://byteflowdigiai.com",
+                            "telephone": "+91 6900105606",
+                            "address": {
+                                "@type": "PostalAddress",
+                                "streetAddress": "1st Floor, Neeladri Complex, 10th Cross, 2nd Main, Sampige Rd, Malleshwaram",
+                                "addressLocality": "Bengaluru",
+                                "addressRegion": "Karnataka",
+                                "postalCode": "560003",
+                                "addressCountry": "IN"
+                            }
+                        },
+                        {
+                            "@context": "https://schema.org",
+                            "@type": "ProfessionalService",
+                            "name": "ByteFlow DigiAi - Guwahati",
+                            "image": "https://byteflowdigiai.com/logo.jpg",
+                            "url": "https://byteflowdigiai.com",
+                            "telephone": "+91 6900105606",
+                            "address": {
+                                "@type": "PostalAddress",
+                                "streetAddress": "101, 1st Floor, Guwahati Research Park",
+                                "addressLocality": "Guwahati",
+                                "addressRegion": "Assam",
+                                "postalCode": "781034",
+                                "addressCountry": "IN"
+                            },
+                            "priceRange": "$$"
+                        }
+                    ]
                 `}
             </script>
         </Helmet>
