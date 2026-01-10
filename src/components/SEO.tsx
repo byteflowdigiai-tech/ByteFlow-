@@ -62,6 +62,20 @@ export default function SEO({
             <meta name="author" content="ByteFlow DigiAI" />
             <meta name="language" content="English" />
             <meta name="revisit-after" content="7 days" />
+
+            {/* JSON-LD Schema for Google Rich Results */}
+            <script type="application/ld+json">
+                {`
+                    {
+                        "@context": "https://schema.org",
+                        "@type": "Organization",
+                        "name": "ByteFlow DigiAi",
+                        "url": "https://byteflowdigiai.com",
+                        "logo": "https://byteflowdigiai.com/logo.jpg",
+                        "description": "ByteFlow DigiAi delivers cutting-edge IT solutions and digital marketing services."
+                    }
+                `}
+            </script>
         </Helmet>
     );
 }
