@@ -13,7 +13,7 @@ interface SEOProps {
 export default function SEO({
     title,
     description,
-    keywords = 'IT solutions, digital marketing, AI automation, web development, SEO, performance marketing, ByteFlow',
+    keywords = 'ByteFlow, ByteFlow DigiAi, IT solutions, digital marketing, AI automation, web development, SEO, performance marketing',
     ogImage = 'https://byteflowdigiai.com/logo.jpg',
     ogType = 'website',
     canonicalUrl,
@@ -70,6 +70,7 @@ export default function SEO({
                         "@context": "https://schema.org",
                         "@type": "Organization",
                         "name": "ByteFlow DigiAi",
+                        "alternateName": "ByteFlow",
                         "url": "https://byteflowdigiai.com",
                         "logo": "https://byteflowdigiai.com/logo.jpg",
                         "description": "ByteFlow DigiAi delivers cutting-edge IT solutions and digital marketing services."
