@@ -101,7 +101,7 @@ export default function OurWork() {
                 title="Our Work - Portfolio & Case Studies"
                 description="Explore ByteFlow's portfolio of successful IT solutions and digital marketing campaigns. See how we've helped businesses transform digitally and achieve measurable growth."
                 keywords="ByteFlow portfolio, IT projects, digital marketing case studies, web development portfolio, successful campaigns"
-                canonicalUrl="https://byteflow-digiai.tech/our-work"
+                canonicalUrl="https://byteflowdigiai.com/our-work"
             />
             <PageHero
                 title="Our"

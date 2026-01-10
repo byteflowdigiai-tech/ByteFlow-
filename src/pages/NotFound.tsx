@@ -18,7 +18,7 @@ const NotFound = () => {
         title="Page Not Found - 404 Error"
         description="The page you're looking for doesn't exist. Return to ByteFlow homepage to explore our IT solutions and digital marketing services."
         noindex={true}
-        canonicalUrl="https://byteflow-digiai.tech/404"
+        canonicalUrl="https://byteflowdigiai.com/404"
       />
       <div className="absolute inset-0 bg-grid opacity-30" />
       <div className="relative container mx-auto px-4 text-center">

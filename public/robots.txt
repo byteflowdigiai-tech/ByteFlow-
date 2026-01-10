@@ -13,5 +13,5 @@ Allow: /
 User-agent: *
 Allow: /
 
-Sitemap: https://byteflow-digiai.tech/sitemap.xml
+Sitemap: https://byteflowdigiai.com/sitemap.xml
 

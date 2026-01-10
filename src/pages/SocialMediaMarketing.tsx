@@ -49,7 +49,7 @@ export default function SocialMediaMarketing() {
                 title="Social Media Marketing - Build Engaged Communities"
                 description="Expert social media marketing services across all major platforms. Create viral content, build engaged communities, and drive conversions through strategic social media management."
                 keywords="social media marketing, social media management, Facebook marketing, Instagram marketing, LinkedIn marketing, viral content"
-                canonicalUrl="https://byteflow-digiai.tech/digital-marketing/social-media-marketing"
+                canonicalUrl="https://byteflowdigiai.com/digital-marketing/social-media-marketing"
             />
             <PageHero
                 badge="Social Media Marketing"

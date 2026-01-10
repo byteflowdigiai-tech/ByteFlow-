@@ -23,7 +23,7 @@ export default function About() {
         title="About Us - Your Partner in Innovation"
         description="Byteflow offers a comprehensive suite of IT and Automation Solutions alongside Digital Media Marketing. We create high-impact posters, manage social media, and run high-conversion ad campaigns."
         keywords="about ByteFlow, IT automation, digital media marketing, social media management, ad campaigns, web development company"
-        canonicalUrl="https://byteflow-digiai.tech/about"
+        canonicalUrl="https://byteflowdigiai.com/about"
       />
       <PageHero
         badge="About ByteFlow DigiAI"

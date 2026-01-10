@@ -19,7 +19,7 @@ export default function SEO({
     canonicalUrl,
     noindex = false,
 }: SEOProps) {
-    const baseUrl = 'https://byteflow-digiai.tech'; // Update with your actual domain
+    const baseUrl = 'https://byteflowdigiai.com';
     const fullTitle = `${title} | ByteFlow DigiAI`;
     const url = canonicalUrl || baseUrl;
 

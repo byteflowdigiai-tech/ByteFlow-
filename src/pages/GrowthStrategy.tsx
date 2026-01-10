@@ -59,7 +59,7 @@ export default function GrowthStrategy() {
         title="Growth Strategy - Scale Your Business Sustainably"
         description="Comprehensive growth strategies to scale your brand sustainably. Data-driven frameworks, market analysis, and strategic planning for long-term business success."
         keywords="growth strategy, business growth, scaling strategy, market expansion, strategic planning, sustainable growth"
-        canonicalUrl="https://byteflow-digiai.tech/digital-marketing/growth-strategy"
+        canonicalUrl="https://byteflowdigiai.com/digital-marketing/growth-strategy"
       />
       <PageHero
         badge="Growth Strategy"

@@ -82,7 +82,7 @@ export default function Index() {
         title="Powering the Future of Digital Innovation"
         description="ByteFlow delivers cutting-edge IT solutions and digital marketing services. Transform your business with AI automation, web development, SEO, and growth strategies."
         keywords="IT solutions, digital marketing, AI automation, web development, SEO, performance marketing, social media marketing, growth strategy, ByteFlow DigiAI"
-        canonicalUrl="https://byteflow-digiai.tech/"
+        canonicalUrl="https://byteflowdigiai.com/"
       />
       {/* Hero Section */}
       <Hero />

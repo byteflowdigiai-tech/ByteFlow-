@@ -67,7 +67,7 @@ export default function AIAutomation() {
         title="AI & Automation - Intelligent Business Solutions"
         description="Transform your business with AI-powered automation. Streamline operations, reduce costs, and boost productivity with ByteFlow's intelligent automation solutions."
         keywords="AI automation, artificial intelligence, business automation, intelligent automation, workflow automation, AI solutions"
-        canonicalUrl="https://byteflow-digiai.tech/it-solutions/ai-automation"
+        canonicalUrl="https://byteflowdigiai.com/it-solutions/ai-automation"
       />
       <PageHero
         badge="AI & Automation"

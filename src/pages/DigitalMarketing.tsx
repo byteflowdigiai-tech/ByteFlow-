@@ -66,7 +66,7 @@ export default function DigitalMarketing() {
         title="Digital Marketing Services - Drive Growth & ROI"
         description="Data-driven digital marketing services to accelerate your business growth. Expertise in SEO, social media, performance marketing, and comprehensive growth strategies."
         keywords="digital marketing, online marketing services, digital marketing agency, marketing strategy, ROI-focused marketing"
-        canonicalUrl="https://byteflow-digiai.tech/digital-marketing"
+        canonicalUrl="https://byteflowdigiai.com/digital-marketing"
       />
       <PageHero
         badge="Digital Marketing"
