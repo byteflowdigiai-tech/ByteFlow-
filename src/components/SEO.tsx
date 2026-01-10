@@ -14,13 +14,13 @@ export default function SEO({
     title,
     description,
     keywords = 'IT solutions, digital marketing, AI automation, web development, SEO, performance marketing, ByteFlow',
-    ogImage = 'https://lovable.dev/opengraph-image-p98pqg.png',
+    ogImage = 'https://byteflowdigiai.com/logo.jpg',
     ogType = 'website',
     canonicalUrl,
     noindex = false,
 }: SEOProps) {
     const baseUrl = 'https://byteflowdigiai.com';
-    const fullTitle = `${title} | ByteFlow DigiAI`;
+    const fullTitle = title === 'Home' ? 'ByteFlow DigiAi' : `${title} | ByteFlow DigiAi`;
     const url = canonicalUrl || baseUrl;
 
     return (

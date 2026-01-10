@@ -22,6 +22,10 @@ const footerLinks = {
     { name: 'Contact', path: '/contact' },
     { name: 'Book Consultation', path: '/book-consultation' },
   ],
+  important: [
+    { name: 'Privacy Policy', path: '/privacy-policy' },
+    { name: 'Terms & Conditions', path: '/terms-conditions' },
+  ],
 };
 
 
@@ -62,7 +66,7 @@ export default function Footer() {
         </motion.div>
 
         {/* Main Footer */}
-        <div className="py-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 lg:gap-12">
+        <div className="py-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-8 lg:gap-12">
           {/* Brand */}
           <div className="lg:col-span-2">
             <Link to="/" className="flex flex-col items-start group mb-6">
@@ -132,6 +136,20 @@ export default function Footer() {
             <h3 className="font-display font-semibold text-foreground mb-4">Company</h3>
             <ul className="space-y-3">
               {footerLinks.company.map((link) => (
+                <li key={link.name}>
+                  <Link to={link.path} className="text-muted-foreground hover:text-foreground transition-colors">
+                    {link.name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Important Links */}
+          <div>
+            <h3 className="font-display font-semibold text-foreground mb-4">Important Links</h3>
+            <ul className="space-y-3">
+              {footerLinks.important.map((link) => (
                 <li key={link.name}>
                   <Link to={link.path} className="text-muted-foreground hover:text-foreground transition-colors">
                     {link.name}
