@@ -81,7 +81,7 @@ export default function Index() {
       <SEO
         title="Home"
         description="ByteFlow delivers cutting-edge IT solutions and digital marketing services. Transform your business with AI automation, web development, SEO, and growth strategies."
-        keywords="ByteFlow, ByteFlow DigiAi, ByteFlowDigi, AI Flow, Byte, ByteFlow AI, website building in Guwahati, AI in Guwahati, Digital Marketing in Guwahati, IT company in Guwahati, software company in Guwahati, IT solutions, digital marketing, AI automation, web development, SEO, performance marketing, growth strategy"
+        keywords="ByteFlow, ByteFlow DigiAi, ByteFlowDigi, AI Flow, Byte, ByteFlow AI, website building in Guwahati, AI in Guwahati, Digital Marketing in Guwahati, IT company in Guwahati, software company in Guwahati, Best startup website builder in Guwahati, Affordable AI automation agency India, Custom software development North East India, ByteFlow DigiAi official site, AI chatbot development Guwahati, Custom web development company Guwahati, Business automation services Assam, Digital transformation agency North East India, SEO and Digital Marketing experts Guwahati, Startup software solutions India, IT solutions, digital marketing, AI automation, web development, SEO, performance marketing, growth strategy"
         canonicalUrl="https://byteflowdigiai.com/"
       />
       {/* Hero Section */}
