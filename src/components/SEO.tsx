@@ -47,7 +47,7 @@ export default function SEO({
             <meta property="og:title" content={fullTitle} />
             <meta property="og:description" content={description} />
             <meta property="og:image" content={ogImage} />
-            <meta property="og:site_name" content="ByteFlow DigiAI" />
+            <meta property="og:site_name" content="ByteFlow DigiAi" />
 
             {/* Twitter */}
             <meta name="twitter:card" content="summary_large_image" />
@@ -74,6 +74,17 @@ export default function SEO({
                         "url": "https://byteflowdigiai.com",
                         "logo": "https://byteflowdigiai.com/logo.jpg",
                         "description": "ByteFlow DigiAi delivers cutting-edge IT solutions and digital marketing services."
+                    }
+                `}
+            </script>
+            <script type="application/ld+json">
+                {`
+                    {
+                        "@context": "https://schema.org",
+                        "@type": "WebSite",
+                        "name": "ByteFlow DigiAi",
+                        "alternateName": "ByteFlow",
+                        "url": "https://byteflowdigiai.com"
                     }
                 `}
             </script>
