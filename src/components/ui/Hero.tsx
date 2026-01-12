@@ -128,46 +128,52 @@ export default function Hero() {
           >
             {/* IT & AI Solutions Card */}
             <Link to="/it-solutions" className="group">
-              <div className="relative p-8 rounded-2xl glass transition-all duration-500 overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-br from-blue-royal/10 to-blue-cyan/10 opacity-0 group-hover:opacity-100 transition-opacity" />
+              <motion.div
+                whileTap={{ scale: 0.98 }}
+                className="relative p-8 rounded-2xl glass transition-all duration-500 overflow-hidden active:bg-muted/30"
+              >
+                <div className="absolute inset-0 bg-gradient-to-br from-blue-royal/10 to-blue-cyan/10 opacity-5 md:opacity-0 group-hover:opacity-100 transition-opacity" />
                 <div className="relative">
-                  <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-blue-royal to-blue-cyan flex items-center justify-center mb-5">
+                  <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-blue-royal to-blue-cyan flex items-center justify-center mb-5 transition-transform group-hover:scale-110 group-active:scale-95">
                     <Code2 className="w-7 h-7 text-primary-foreground" />
                   </div>
-                  <h3 className="font-display text-xl font-semibold mb-3 group-hover:text-blue-cyan transition-colors">
+                  <h3 className="font-display text-xl font-semibold mb-3 group-hover:text-blue-cyan transition-colors text-left">
                     IT & AI Solutions
                   </h3>
-                  <p className="text-muted-foreground text-sm mb-4">
+                  <p className="text-muted-foreground text-sm mb-4 text-left">
                     Website development, AI automation, and scalable tech infrastructure for modern businesses.
                   </p>
-                  <span className="inline-flex items-center text-sm font-medium text-blue-cyan group-hover:gap-2 transition-all">
-                    Explore Solutions
-                    <ArrowRight className="w-4 h-4 ml-1 opacity-0 group-hover:opacity-100 transition-all" />
-                  </span>
+                  <div className="flex items-center text-sm font-medium text-blue-cyan transition-all">
+                    <span>Explore Solutions</span>
+                    <ArrowRight className="w-4 h-4 ml-1 opacity-100 md:opacity-0 group-hover:opacity-100 group-hover:translate-x-1 transition-all" />
+                  </div>
                 </div>
-              </div>
+              </motion.div>
             </Link>
 
             {/* Digital Marketing Card */}
             <Link to="/digital-marketing" className="group">
-              <div className="relative p-8 rounded-2xl glass transition-all duration-500 overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-br from-green-emerald/10 to-green-mint/10 opacity-0 group-hover:opacity-100 transition-opacity" />
+              <motion.div
+                whileTap={{ scale: 0.98 }}
+                className="relative p-8 rounded-2xl glass transition-all duration-500 overflow-hidden active:bg-muted/30"
+              >
+                <div className="absolute inset-0 bg-gradient-to-br from-green-emerald/10 to-green-mint/10 opacity-5 md:opacity-0 group-hover:opacity-100 transition-opacity" />
                 <div className="relative">
-                  <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-green-emerald to-green-mint flex items-center justify-center mb-5">
+                  <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-green-emerald to-green-mint flex items-center justify-center mb-5 transition-transform group-hover:scale-110 group-active:scale-95">
                     <TrendingUp className="w-7 h-7 text-primary-foreground" />
                   </div>
-                  <h3 className="font-display text-xl font-semibold mb-3 group-hover:text-green-emerald transition-colors">
+                  <h3 className="font-display text-xl font-semibold mb-3 group-hover:text-green-emerald transition-colors text-left">
                     Digital Marketing
                   </h3>
-                  <p className="text-muted-foreground text-sm mb-4">
+                  <p className="text-muted-foreground text-sm mb-4 text-left">
                     SEO, performance marketing, and growth strategies that drive measurable results.
                   </p>
-                  <span className="inline-flex items-center text-sm font-medium text-green-emerald group-hover:gap-2 transition-all">
-                    Explore Services
-                    <ArrowRight className="w-4 h-4 ml-1 opacity-0 group-hover:opacity-100 transition-all" />
-                  </span>
+                  <div className="flex items-center text-sm font-medium text-green-emerald transition-all">
+                    <span>Explore Services</span>
+                    <ArrowRight className="w-4 h-4 ml-1 opacity-100 md:opacity-0 group-hover:opacity-100 group-hover:translate-x-1 transition-all" />
+                  </div>
                 </div>
-              </div>
+              </motion.div>
             </Link>
           </motion.div>
         </div>

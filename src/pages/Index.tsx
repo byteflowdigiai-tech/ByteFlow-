@@ -201,11 +201,13 @@ export default function Index() {
                 key={item.title}
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
+                whileHover={{ y: -5 }}
+                whileTap={{ scale: 0.98 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="text-center p-6"
+                className="text-center p-6 rounded-2xl transition-colors hover:bg-muted/30 active:bg-muted/50"
               >
-                <div className="w-16 h-16 mx-auto mb-4 rounded-2xl bg-gradient-to-br from-blue-royal/10 to-green-emerald/10 flex items-center justify-center">
+                <div className="w-16 h-16 mx-auto mb-4 rounded-2xl bg-gradient-to-br from-blue-royal/10 to-green-emerald/10 flex items-center justify-center transition-transform group-hover:scale-110">
                   <item.icon className="w-8 h-8 text-foreground" />
                 </div>
                 <h3 className="font-display font-semibold text-lg mb-2">{item.title}</h3>

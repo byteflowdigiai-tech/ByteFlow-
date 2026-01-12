@@ -125,14 +125,16 @@ export default function AIAutomation() {
                 key={useCase.title}
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
+                whileHover={{ y: -5 }}
+                whileTap={{ scale: 0.98 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="p-8 rounded-2xl glass transition-all duration-500"
+                className="p-8 rounded-2xl glass transition-all duration-500 active:bg-muted/30 group"
               >
                 <div className="flex items-start justify-between mb-4">
-                  <h3 className="font-display text-xl font-semibold">{useCase.title}</h3>
+                  <h3 className="font-display text-xl font-semibold group-hover:text-blue-cyan transition-colors">{useCase.title}</h3>
                   <div className="text-right">
-                    <div className="text-3xl font-display font-bold text-blue-cyan">
+                    <div className="text-3xl font-display font-bold text-blue-cyan transition-transform group-hover:scale-110">
                       <Counter value={useCase.stat} delay={index * 0.1} />
                     </div>
                     <div className="text-sm text-muted-foreground">{useCase.statLabel}</div>

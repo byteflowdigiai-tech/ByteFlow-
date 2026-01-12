@@ -49,11 +49,13 @@ export default function About() {
                 key={value.title}
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
+                whileHover={{ y: -5 }}
+                whileTap={{ scale: 0.98 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="text-center p-6 rounded-2xl glass"
+                className="text-center p-6 rounded-2xl glass transition-colors active:bg-muted/30"
               >
-                <div className="w-14 h-14 mx-auto mb-4 rounded-xl bg-gradient-to-br from-blue-royal/20 to-green-emerald/20 flex items-center justify-center">
+                <div className="w-14 h-14 mx-auto mb-4 rounded-xl bg-gradient-to-br from-blue-royal/20 to-green-emerald/20 flex items-center justify-center transition-transform group-hover:scale-110">
                   <value.icon className="w-7 h-7 text-foreground" />
                 </div>
                 <h3 className="font-display font-semibold text-lg mb-2">{value.title}</h3>

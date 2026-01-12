@@ -133,6 +133,7 @@ export default function OurWork() {
                                 className={`group relative rounded-3xl overflow-hidden cursor-pointer h-auto md:aspect-auto md:h-[300px] ${i === 0 || i === 3 ? 'md:col-span-2' : ''}`}
                                 initial={{ opacity: 0, y: 20 }}
                                 whileInView={{ opacity: 1, y: 0 }}
+                                whileTap={{ scale: 0.98 }}
                                 viewport={{ once: true }}
                                 transition={{ delay: i * 0.1 }}
                                 onClick={() => setSelectedProject(project)}
@@ -142,9 +143,9 @@ export default function OurWork() {
                                     alt={project.title}
                                     className="w-full h-auto transition-transform duration-700 group-hover:scale-110"
                                 />
-                                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
-                                    <h3 className="text-2xl font-bold text-white mb-2">{project.title}</h3>
-                                    <p className="text-white/80 line-clamp-2">{project.description}</p>
+                                <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                                    <h3 className="text-xl md:text-2xl font-bold text-white mb-2">{project.title}</h3>
+                                    <p className="text-white/80 line-clamp-2 text-sm">{project.description}</p>
                                     <div className="mt-4 flex gap-2 flex-wrap">
                                         {project.technologies.slice(0, 2).map(tech => (
                                             <Badge key={tech} variant="secondary" className="bg-white/20 text-white hover:bg-white/30 border-none">{tech}</Badge>
@@ -174,6 +175,7 @@ export default function OurWork() {
                                 className={`group relative rounded-3xl overflow-hidden cursor-pointer aspect-[4/3] md:aspect-auto md:h-[300px] ${i === 1 ? 'md:col-span-2' : ''}`}
                                 initial={{ opacity: 0, y: 20 }}
                                 whileInView={{ opacity: 1, y: 0 }}
+                                whileTap={{ scale: 0.98 }}
                                 viewport={{ once: true }}
                                 transition={{ delay: i * 0.1 }}
                                 onClick={() => setSelectedProject(project)}
@@ -183,9 +185,9 @@ export default function OurWork() {
                                     alt={project.title}
                                     className="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-110"
                                 />
-                                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
-                                    <h3 className="text-2xl font-bold text-white mb-2">{project.title}</h3>
-                                    <p className="text-white/80 line-clamp-2">{project.description}</p>
+                                <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                                    <h3 className="text-xl md:text-2xl font-bold text-white mb-2">{project.title}</h3>
+                                    <p className="text-white/80 line-clamp-2 text-sm">{project.description}</p>
                                     <div className="mt-4 flex gap-2 flex-wrap">
                                         {project.technologies.slice(0, 2).map(tech => (
                                             <Badge key={tech} variant="secondary" className="bg-white/20 text-white hover:bg-white/30 border-none">{tech}</Badge>

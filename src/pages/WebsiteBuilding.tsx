@@ -133,11 +133,13 @@ export default function WebsiteBuilding() {
                 key={item.step}
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
+                whileHover={{ y: -5 }}
+                whileTap={{ scale: 0.98 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="relative p-6 rounded-2xl glass"
+                className="relative p-6 rounded-2xl glass transition-colors active:bg-muted/30 group"
               >
-                <div className="text-4xl font-display font-bold text-blue-cyan/30 mb-4">
+                <div className="text-4xl font-display font-bold text-blue-cyan/30 mb-4 transition-transform group-hover:scale-110">
                   {item.step}
                 </div>
                 <h3 className="font-display font-semibold text-lg mb-2">{item.title}</h3>

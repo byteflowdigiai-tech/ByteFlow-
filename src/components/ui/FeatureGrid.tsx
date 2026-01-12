@@ -22,16 +22,18 @@ export default function FeatureGrid({ features, theme }: FeatureGridProps) {
           key={feature.title}
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
+          whileHover={{ y: -5 }}
+          whileTap={{ scale: 0.98 }}
           viewport={{ once: true, margin: '-50px' }}
           transition={{ duration: 0.5, delay: index * 0.1 }}
-          className={`group relative p-6 rounded-2xl glass overflow-hidden transition-all duration-500`}
+          className={`group relative p-6 rounded-2xl glass overflow-hidden transition-all duration-500 active:bg-muted/30`}
         >
-          {/* Background glow */}
-          <div className={`absolute -top-20 -right-20 w-40 h-40 rounded-full blur-3xl opacity-0 group-hover:opacity-30 transition-opacity ${isBlue ? 'bg-blue-cyan' : 'bg-green-mint'
+          {/* Background glow - partially visible on mobile, fully on hover */}
+          <div className={`absolute -top-20 -right-20 w-40 h-40 rounded-full blur-3xl opacity-10 md:opacity-0 group-hover:opacity-30 transition-opacity ${isBlue ? 'bg-blue-cyan' : 'bg-green-mint'
             }`} />
 
           {/* Icon */}
-          <div className={`relative w-12 h-12 rounded-xl flex items-center justify-center mb-4 transition-transform group-hover:scale-110 ${isBlue
+          <div className={`relative w-12 h-12 rounded-xl flex items-center justify-center mb-4 transition-transform group-hover:scale-110 group-active:scale-95 ${isBlue
             ? 'bg-gradient-to-br from-blue-royal/20 to-blue-cyan/20'
             : 'bg-gradient-to-br from-green-emerald/20 to-green-mint/20'
             }`}>
