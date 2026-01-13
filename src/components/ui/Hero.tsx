@@ -127,13 +127,13 @@ export default function Hero() {
             className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16"
           >
             <Link to="/book-consultation">
-              <Button size="lg" className="rounded-xl bg-gradient-to-r from-blue-royal to-green-emerald hover:opacity-90 transition-opacity group px-8">
+              <Button size="lg" className="rounded-xl bg-gradient-to-r from-blue-royal to-green-emerald hover:opacity-90 transition-opacity group px-8" aria-label="Get started by booking a consultation with ByteFlow">
                 Get Started
                 <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
               </Button>
             </Link>
             <Link to="/about">
-              <Button size="lg" variant="outline" className="rounded-xl px-8">
+              <Button size="lg" variant="outline" className="rounded-xl px-8" aria-label="Learn more about ByteFlow DigiAI innovation and services">
                 Learn More
               </Button>
             </Link>

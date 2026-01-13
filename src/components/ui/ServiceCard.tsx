@@ -49,7 +49,7 @@ export default function ServiceCard({ title, description, icon: Icon, link, them
               {description}
             </p>
             <span className={`inline-flex items-center text-sm font-medium transition-all ${isBlue ? 'text-blue-cyan' : 'text-green-emerald'
-              }`}>
+              }`} aria-label={`Learn more about ${title}`}>
               Learn More
               <ArrowRight className="w-4 h-4 ml-1 group-hover:translate-x-1 group-active:translate-x-2 transition-transform" />
             </span>
