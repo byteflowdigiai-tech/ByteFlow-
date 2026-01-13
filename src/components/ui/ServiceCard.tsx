@@ -41,10 +41,10 @@ export default function ServiceCard({ title, description, icon: Icon, link, them
 
           {/* Content */}
           <div className="relative">
-            <h3 className={`font-display text-xl font-semibold mb-3 transition-colors ${isBlue ? 'group-hover:text-blue-cyan' : 'group-hover:text-green-emerald'
+            <h2 className={`font-display text-xl font-semibold mb-3 transition-colors ${isBlue ? 'group-hover:text-blue-cyan' : 'group-hover:text-green-emerald'
               }`}>
               {title}
-            </h3>
+            </h2>
             <p className="text-muted-foreground text-sm leading-relaxed mb-5">
               {description}
             </p>

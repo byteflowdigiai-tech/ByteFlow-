@@ -189,7 +189,7 @@ export default function ConsultationForm() {
             value={formData.service}
             onValueChange={(value) => setFormData(prev => ({ ...prev, service: value }))}
           >
-            <SelectTrigger className="rounded-xl h-12">
+            <SelectTrigger className="rounded-xl h-12" aria-label="Select a service interested in">
               <SelectValue placeholder="Select a service" />
             </SelectTrigger>
             <SelectContent>
