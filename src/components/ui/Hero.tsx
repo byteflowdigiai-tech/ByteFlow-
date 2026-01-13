@@ -132,8 +132,8 @@ export default function Hero() {
                 <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
               </Button>
             </Link>
-            <Link to="/about">
-              <Button size="lg" variant="outline" className="rounded-xl px-8" aria-label="Learn more about ByteFlow DigiAI innovation and services">
+            <Link to="/about" aria-label="Learn more about ByteFlow DigiAI and our services">
+              <Button size="lg" variant="outline" className="rounded-xl px-8">
                 Learn More
               </Button>
             </Link>

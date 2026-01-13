@@ -68,6 +68,8 @@ export default function Navbar() {
                 src={logo}
                 alt="ByteFlow DigiAI Logo"
                 className="h-full w-auto object-contain"
+                width={160}
+                height={48}
               />
               <div className="absolute inset-0 bg-gradient-to-br from-blue-cyan to-green-emerald opacity-0 group-hover:opacity-10 transition-opacity" />
             </div>

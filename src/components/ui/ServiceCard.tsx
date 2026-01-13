@@ -23,7 +23,7 @@ export default function ServiceCard({ title, description, icon: Icon, link, them
       viewport={{ once: true, margin: '-50px' }}
       transition={{ duration: 0.5, delay }}
     >
-      <Link to={link} className="group block h-full">
+      <Link to={link} className="group block h-full" aria-label={`Learn more about our ${title} services`}>
         <div className={`relative h-full p-8 rounded-2xl glass transition-all duration-500 overflow-hidden active:bg-muted/30`}>
           {/* Gradient overlay - partially visible on mobile, fully on hover */}
           <div className={`absolute inset-0 opacity-5 md:opacity-0 group-hover:opacity-100 transition-opacity duration-500 ${isBlue
