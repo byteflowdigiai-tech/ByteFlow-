@@ -38,7 +38,7 @@ export default function YourPage() {
         title="Your Page Title - Keep it under 60 characters"
         description="A compelling description under 160 characters that includes your target keywords"
         keywords="keyword1, keyword2, keyword3"
-        canonicalUrl="https://byteflow-digiai.tech/your-page-path"
+        canonicalUrl="https://www.byteflowdigiai.com/your-page-path"
       />
       {/* Rest of your page content */}
     </main>

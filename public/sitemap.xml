@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <!-- Homepage -->
   <url>
-    <loc>https://byteflowdigiai.com/</loc>
+    <loc>https://www.byteflowdigiai.com</loc>
     <lastmod>2026-01-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
@@ -10,28 +10,28 @@
   
   <!-- Main Pages -->
   <url>
-    <loc>https://byteflowdigiai.com/about</loc>
+    <loc>https://www.byteflowdigiai.com/about</loc>
     <lastmod>2026-01-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   
   <url>
-    <loc>https://byteflowdigiai.com/contact</loc>
+    <loc>https://www.byteflowdigiai.com/contact</loc>
     <lastmod>2026-01-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   
   <url>
-    <loc>https://byteflowdigiai.com/our-work</loc>
+    <loc>https://www.byteflowdigiai.com/our-work</loc>
     <lastmod>2026-01-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   
   <url>
-    <loc>https://byteflowdigiai.com/book-consultation</loc>
+    <loc>https://www.byteflowdigiai.com/book-consultation</loc>
     <lastmod>2026-01-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
@@ -39,21 +39,21 @@
   
   <!-- IT Solutions -->
   <url>
-    <loc>https://byteflowdigiai.com/it-solutions</loc>
+    <loc>https://www.byteflowdigiai.com/it-solutions</loc>
     <lastmod>2026-01-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   
   <url>
-    <loc>https://byteflowdigiai.com/it-solutions/website-building</loc>
+    <loc>https://www.byteflowdigiai.com/it-solutions/website-building</loc>
     <lastmod>2026-01-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   
   <url>
-    <loc>https://byteflowdigiai.com/it-solutions/ai-automation</loc>
+    <loc>https://www.byteflowdigiai.com/it-solutions/ai-automation</loc>
     <lastmod>2026-01-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -61,35 +61,35 @@
   
   <!-- Digital Marketing -->
   <url>
-    <loc>https://byteflowdigiai.com/digital-marketing</loc>
+    <loc>https://www.byteflowdigiai.com/digital-marketing</loc>
     <lastmod>2026-01-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   
   <url>
-    <loc>https://byteflowdigiai.com/digital-marketing/seo</loc>
+    <loc>https://www.byteflowdigiai.com/digital-marketing/seo</loc>
     <lastmod>2026-01-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   
   <url>
-    <loc>https://byteflowdigiai.com/digital-marketing/social-media-marketing</loc>
+    <loc>https://www.byteflowdigiai.com/digital-marketing/social-media-marketing</loc>
     <lastmod>2026-01-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   
   <url>
-    <loc>https://byteflowdigiai.com/digital-marketing/performance-marketing</loc>
+    <loc>https://www.byteflowdigiai.com/digital-marketing/performance-marketing</loc>
     <lastmod>2026-01-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   
   <url>
-    <loc>https://byteflowdigiai.com/digital-marketing/growth-strategy</loc>
+    <loc>https://www.byteflowdigiai.com/digital-marketing/growth-strategy</loc>
     <lastmod>2026-01-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -97,14 +97,14 @@
   
   <!-- Legal Pages -->
   <url>
-    <loc>https://byteflowdigiai.com/privacy-policy</loc>
+    <loc>https://www.byteflowdigiai.com/privacy-policy</loc>
     <lastmod>2026-01-10</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://byteflowdigiai.com/terms-conditions</loc>
+    <loc>https://www.byteflowdigiai.com/terms-conditions</loc>
     <lastmod>2026-01-10</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>

@@ -9,7 +9,7 @@ export default function TermsConditions() {
                 title="Terms & Conditions"
                 description="ByteFlow DigiAI Terms and Conditions. Read our terms of service for using our website and services."
                 keywords="terms and conditions, terms of service, ByteFlow terms, legal terms"
-                canonicalUrl="https://byteflowdigiai.com/terms-conditions"
+                canonicalUrl="https://www.byteflowdigiai.com/terms-conditions"
             />
             <PageHero
                 badge="Legal"

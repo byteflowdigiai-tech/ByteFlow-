@@ -46,7 +46,7 @@ export default function PerformanceMarketing() {
         title="Performance Marketing - ROI-Focused Ad Campaigns"
         description="Performance-based marketing campaigns that deliver measurable ROI. Expert management of Google Ads, Meta Ads, and multi-channel paid advertising campaigns."
         keywords="performance marketing, Google Ads, Meta Ads, PPC advertising, paid advertising, ROI marketing, conversion optimization"
-        canonicalUrl="https://byteflowdigiai.com/digital-marketing/performance-marketing"
+        canonicalUrl="https://www.byteflowdigiai.com/digital-marketing/performance-marketing"
       />
       <PageHero
         badge="Performance Marketing"

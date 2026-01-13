@@ -9,7 +9,7 @@ export default function PrivacyPolicy() {
                 title="Privacy Policy"
                 description="ByteFlow DigiAI Privacy Policy. Learn how we collect, use, and protect your personal information."
                 keywords="privacy policy, data protection, ByteFlow privacy, GDPR compliance"
-                canonicalUrl="https://byteflowdigiai.com/privacy-policy"
+                canonicalUrl="https://www.byteflowdigiai.com/privacy-policy"
             />
             <PageHero
                 badge="Legal"

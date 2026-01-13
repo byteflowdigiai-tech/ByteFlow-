@@ -44,7 +44,7 @@ export default function SEO() {
         title="SEO Services - Boost Your Organic Traffic & Rankings"
         description="Professional SEO services to increase your search engine rankings and organic traffic. Data-driven strategies, technical SEO, content optimization, and link building."
         keywords="SEO services, search engine optimization, organic traffic, keyword optimization, SEO agency, link building, technical SEO"
-        canonicalUrl="https://byteflowdigiai.com/digital-marketing/seo"
+        canonicalUrl="https://www.byteflowdigiai.com/digital-marketing/seo"
       />
       <PageHero
         badge="SEO Services"

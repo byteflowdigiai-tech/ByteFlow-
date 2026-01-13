@@ -19,7 +19,7 @@ export default function SEO({
     canonicalUrl,
     noindex = false,
 }: SEOProps) {
-    const baseUrl = 'https://byteflowdigiai.com';
+    const baseUrl = 'https://www.byteflowdigiai.com';
     const fullTitle = title === 'Home' ? 'ByteFlow DigiAi' : `${title} | ByteFlow DigiAi`;
     const url = canonicalUrl || baseUrl;
 
@@ -71,8 +71,8 @@ export default function SEO({
                         "@type": "Organization",
                         "name": "ByteFlow DigiAi",
                         "alternateName": "ByteFlow",
-                        "url": "https://byteflowdigiai.com",
-                        "logo": "https://byteflowdigiai.com/logo.jpg",
+                        "url": "https://www.byteflowdigiai.com",
+                        "logo": "https://www.byteflowdigiai.com/logo.jpg",
                         "description": "ByteFlow DigiAi delivers cutting-edge IT solutions and digital marketing services.",
                         "contactPoint": [
                             {
@@ -93,7 +93,7 @@ export default function SEO({
                         "@type": "WebSite",
                         "name": "ByteFlow DigiAi",
                         "alternateName": "ByteFlow",
-                        "url": "https://byteflowdigiai.com"
+                        "url": "https://www.byteflowdigiai.com"
                     }
                 `}
             </script>
@@ -105,8 +105,8 @@ export default function SEO({
                             "@context": "https://schema.org",
                             "@type": "ProfessionalService",
                             "name": "ByteFlow DigiAi - Bengaluru",
-                            "image": "https://byteflowdigiai.com/logo.jpg",
-                            "url": "https://byteflowdigiai.com",
+                            "image": "https://www.byteflowdigiai.com/logo.jpg",
+                            "url": "https://www.byteflowdigiai.com",
                             "telephone": "+91 6900105606",
                             "address": {
                                 "@type": "PostalAddress",
@@ -121,8 +121,8 @@ export default function SEO({
                             "@context": "https://schema.org",
                             "@type": "ProfessionalService",
                             "name": "ByteFlow DigiAi - Guwahati",
-                            "image": "https://byteflowdigiai.com/logo.jpg",
-                            "url": "https://byteflowdigiai.com",
+                            "image": "https://www.byteflowdigiai.com/logo.jpg",
+                            "url": "https://www.byteflowdigiai.com",
                             "telephone": "+91 6900105606",
                             "address": {
                                 "@type": "PostalAddress",

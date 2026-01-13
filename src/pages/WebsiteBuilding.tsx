@@ -76,7 +76,7 @@ export default function WebsiteBuilding() {
         title="Website Building - Custom Web Development Services"
         description="Professional website building services with modern technologies. We create responsive, high-performance websites optimized for speed, conversions, and user experience."
         keywords="website building, custom web development, responsive website design, web development services, professional website development"
-        canonicalUrl="https://byteflowdigiai.com/it-solutions/website-building"
+        canonicalUrl="https://www.byteflowdigiai.com/it-solutions/website-building"
       />
       <PageHero
         badge="Website Building"

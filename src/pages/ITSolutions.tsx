@@ -63,7 +63,7 @@ export default function ITSolutions() {
                 title="IT Solutions - Custom Software & Technology Services"
                 description="ByteFlow delivers enterprise-grade IT solutions including custom web development, AI automation, and digital transformation services. Scale your business with cutting-edge technology."
                 keywords="IT solutions, custom software development, enterprise IT services, technology consulting, digital transformation"
-                canonicalUrl="https://byteflowdigiai.com/it-solutions"
+                canonicalUrl="https://www.byteflowdigiai.com/it-solutions"
             />
             <PageHero
                 badge="IT & AI Solutions"
