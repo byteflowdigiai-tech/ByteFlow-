@@ -14,8 +14,12 @@ export default function Hero() {
         <div className="absolute inset-0">
           <img
             src={heroImage}
-            alt="background base"
+            alt="ByteFlow DigiAI - Future of Digital Innovation"
             className="w-full h-full object-cover opacity-50"
+            width={1920}
+            height={1080}
+            loading="eager"
+            fetchPriority="high"
           />
         </div>
 
@@ -35,7 +39,15 @@ export default function Hero() {
             ease: "easeInOut",
           }}
         >
-          <img src={heroImage} alt="Blue Wave" className="w-full h-full object-cover" />
+          <img
+            src={heroImage}
+            alt="ByteFlow IT and AI Solutions background"
+            className="w-full h-full object-cover"
+            width={1920}
+            height={1080}
+            loading="eager"
+            fetchPriority="high"
+          />
         </motion.div>
 
         {/* Green Wave (Right Side) - Moves Second (Delayed) */}
@@ -55,7 +67,15 @@ export default function Hero() {
             delay: 2 // The "Then Green Wave" delay
           }}
         >
-          <img src={heroImage} alt="Green Wave" className="w-full h-full object-cover" />
+          <img
+            src={heroImage}
+            alt="ByteFlow Digital Marketing background"
+            className="w-full h-full object-cover"
+            width={1920}
+            height={1080}
+            loading="eager"
+            fetchPriority="high"
+          />
         </motion.div>
 
         {/* Overlay for text readability */}
@@ -137,9 +157,9 @@ export default function Hero() {
                   <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-blue-royal to-blue-cyan flex items-center justify-center mb-5 transition-transform group-hover:scale-110 group-active:scale-95">
                     <Code2 className="w-7 h-7 text-primary-foreground" />
                   </div>
-                  <h3 className="font-display text-xl font-semibold mb-3 group-hover:text-blue-cyan transition-colors text-left">
+                  <div className="font-display text-xl font-semibold mb-3 group-hover:text-blue-cyan transition-colors text-left">
                     IT & AI Solutions
-                  </h3>
+                  </div>
                   <p className="text-muted-foreground text-sm mb-4 text-left">
                     Website development, AI automation, and scalable tech infrastructure for modern businesses.
                   </p>
@@ -162,9 +182,9 @@ export default function Hero() {
                   <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-green-emerald to-green-mint flex items-center justify-center mb-5 transition-transform group-hover:scale-110 group-active:scale-95">
                     <TrendingUp className="w-7 h-7 text-primary-foreground" />
                   </div>
-                  <h3 className="font-display text-xl font-semibold mb-3 group-hover:text-green-emerald transition-colors text-left">
+                  <div className="font-display text-xl font-semibold mb-3 group-hover:text-green-emerald transition-colors text-left">
                     Digital Marketing
-                  </h3>
+                  </div>
                   <p className="text-muted-foreground text-sm mb-4 text-left">
                     SEO, performance marketing, and growth strategies that drive measurable results.
                   </p>

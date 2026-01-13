@@ -132,6 +132,7 @@ export default function Navbar() {
               size="icon"
               onClick={toggleTheme}
               className="rounded-xl"
+              aria-label={theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode'}
             >
               {theme === 'dark' ? <Sun className="w-5 h-5" /> : <Moon className="w-5 h-5" />}
             </Button>
@@ -148,6 +149,7 @@ export default function Navbar() {
               size="icon"
               className="lg:hidden rounded-xl"
               onClick={() => setIsMobileOpen(!isMobileOpen)}
+              aria-label={isMobileOpen ? 'Close mobile menu' : 'Open mobile menu'}
             >
               {isMobileOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
             </Button>

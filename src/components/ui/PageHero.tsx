@@ -53,6 +53,10 @@ export default function PageHero({ badge, title, titleHighlight, subtitle, theme
             src={getHeroImage()}
             alt={`ByteFlow ${isBlue ? 'IT & AI Solutions' : 'Digital Marketing'} background`}
             className="w-full h-full object-cover"
+            width={1280}
+            height={720}
+            loading="eager"
+            fetchPriority="high"
             style={variant === 'growth' ? { filter: 'hue-rotate(-70deg) saturate(1.2)' } : (variant === 'contact' ? { filter: 'brightness(0.7)' } : undefined)}
             initial={{ scale: 1 }}
             animate={{ scale: [1, 1.1, 1] }}
@@ -67,6 +71,10 @@ export default function PageHero({ badge, title, titleHighlight, subtitle, theme
             src={getHeroImage()}
             alt={`ByteFlow ${isBlue ? 'IT & AI Solutions' : 'Digital Marketing'} background`}
             className="w-full h-full object-cover"
+            width={1280}
+            height={720}
+            loading="eager"
+            fetchPriority="high"
           />
         )}
         <div className={`absolute inset-0 ${variant === 'work' ? 'bg-black/40' : 'bg-background/50'}`} />
