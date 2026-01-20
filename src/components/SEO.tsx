@@ -13,7 +13,7 @@ interface SEOProps {
 export default function SEO({
     title,
     description,
-    keywords = 'ByteFlow, ByteFlow DigiAi, ByteFlowDigi, AI Flow, Byte, ByteFlow AI, website building in Guwahati, AI in Guwahati, Digital Marketing in Guwahati, IT company in Guwahati, software company in Guwahati, Best startup website builder in Guwahati, Affordable AI automation agency India, Custom software development North East India, ByteFlow DigiAi official site, AI chatbot development Guwahati, Custom web development company Guwahati, Business automation services Assam, Digital transformation agency North East India, SEO and Digital Marketing experts Guwahati, Startup software solutions India, IT solutions, digital marketing, AI automation, web development, SEO, performance marketing',
+    keywords = 'IT solutions, digital marketing, AI automation, web development, SEO, performance marketing, ByteFlow DigiAi',
     ogImage = 'https://www.byteflowdigiai.com/logo.jpg',
     ogType = 'website',
     canonicalUrl,
@@ -21,7 +21,8 @@ export default function SEO({
 }: SEOProps) {
     const baseUrl = 'https://www.byteflowdigiai.com';
     const fullTitle = title === 'Home' ? 'ByteFlow DigiAi' : `${title} | ByteFlow DigiAi`;
-    const url = canonicalUrl || baseUrl;
+    // Ensure no trailing slash mismatch
+    const url = (canonicalUrl || baseUrl).replace(/\/$/, "");
 
     return (
         <Helmet>
@@ -30,6 +31,10 @@ export default function SEO({
             <meta name="title" content={fullTitle} />
             <meta name="description" content={description} />
             <meta name="keywords" content={keywords} />
+
+            {/* Mobile Tags */}
+            <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
+            <meta name="theme-color" content="#ffffff" />
 
             {/* Robots */}
             {noindex ? (
@@ -56,86 +61,28 @@ export default function SEO({
             <meta name="twitter:description" content={description} />
             <meta name="twitter:image" content={ogImage} />
             <meta name="twitter:site" content="@ByteFlow" />
-            <meta name="twitter:creator" content="@ByteFlow" />
 
-            {/* Additional SEO tags */}
+            {/* Additional Tags */}
             <meta name="author" content="ByteFlow DigiAI" />
-            <meta name="language" content="English" />
-            <meta name="revisit-after" content="7 days" />
+            <link rel="icon" type="image/jpeg" href="/logo.jpg" />
+            <link rel="apple-touch-icon" href="/logo.jpg" />
 
-            {/* JSON-LD Schema for Google Rich Results */}
+            {/* JSON-LD Schema */}
             <script type="application/ld+json">
-                {`
-                    {
-                        "@context": "https://schema.org",
-                        "@type": "Organization",
-                        "name": "ByteFlow DigiAi",
-                        "alternateName": "ByteFlow",
-                        "url": "https://www.byteflowdigiai.com",
-                        "logo": "https://www.byteflowdigiai.com/logo.jpg",
-                        "description": "ByteFlow DigiAi delivers cutting-edge IT solutions and digital marketing services.",
-                        "contactPoint": [
-                            {
-                                "@type": "ContactPoint",
-                                "telephone": "+91 6900105606",
-                                "contactType": "customer service",
-                                "areaServed": ["IN"],
-                                "availableLanguage": "en"
-                            }
-                        ]
+                {JSON.stringify({
+                    "@context": "https://schema.org",
+                    "@type": "Organization",
+                    "name": "ByteFlow DigiAi",
+                    "url": "https://www.byteflowdigiai.com",
+                    "logo": "https://www.byteflowdigiai.com/logo.jpg",
+                    "description": "ByteFlow DigiAi delivers cutting-edge IT solutions and digital marketing services.",
+                    "contactPoint": {
+                        "@type": "ContactPoint",
+                        "telephone": "+91 6900105606",
+                        "contactType": "customer service",
+                        "availableLanguage": "en"
                     }
-                `}
-            </script>
-            <script type="application/ld+json">
-                {`
-                    {
-                        "@context": "https://schema.org",
-                        "@type": "WebSite",
-                        "name": "ByteFlow DigiAi",
-                        "alternateName": "ByteFlow",
-                        "url": "https://www.byteflowdigiai.com"
-                    }
-                `}
-            </script>
-            {/* Local Business Schema for Branches */}
-            <script type="application/ld+json">
-                {`
-                    [
-                        {
-                            "@context": "https://schema.org",
-                            "@type": "ProfessionalService",
-                            "name": "ByteFlow DigiAi - Bengaluru",
-                            "image": "https://www.byteflowdigiai.com/logo.jpg",
-                            "url": "https://www.byteflowdigiai.com",
-                            "telephone": "+91 6900105606",
-                            "address": {
-                                "@type": "PostalAddress",
-                                "streetAddress": "1st Floor, Neeladri Complex, 10th Cross, 2nd Main, Sampige Rd, Malleshwaram",
-                                "addressLocality": "Bengaluru",
-                                "addressRegion": "Karnataka",
-                                "postalCode": "560003",
-                                "addressCountry": "IN"
-                            }
-                        },
-                        {
-                            "@context": "https://schema.org",
-                            "@type": "ProfessionalService",
-                            "name": "ByteFlow DigiAi - Guwahati",
-                            "image": "https://www.byteflowdigiai.com/logo.jpg",
-                            "url": "https://www.byteflowdigiai.com",
-                            "telephone": "+91 6900105606",
-                            "address": {
-                                "@type": "PostalAddress",
-                                "streetAddress": "101, 1st Floor, Guwahati Research Park",
-                                "addressLocality": "Guwahati",
-                                "addressRegion": "Assam",
-                                "postalCode": "781034",
-                                "addressCountry": "IN"
-                            },
-                            "priceRange": "$$"
-                        }
-                    ]
-                `}
+                })}
             </script>
         </Helmet>
     );
