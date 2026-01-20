@@ -163,8 +163,8 @@ export default function Footer() {
         </div>
 
         {/* Bottom Bar */}
-        <div className="py-6 border-t border-border flex flex-col md:flex-row items-center justify-between gap-4">
-          <p className="text-sm text-muted-foreground">
+        <div className="py-6 border-t border-border flex items-center justify-center gap-4">
+          <p className="text-sm text-muted-foreground text-center">
             © {currentYear} ByteFlow DigiAI. All rights reserved.
           </p>
         </div>
