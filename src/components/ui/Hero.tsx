@@ -104,7 +104,7 @@ export default function Hero() {
             transition={{ duration: 0.6, delay: 0.1 }}
             className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6"
           >
-            Powering the Future of{' '}
+            ByteFlow: Powering the Future of{' '}
             <span className="text-gradient-mixed">Digital Innovation</span>
           </motion.h1>
 
