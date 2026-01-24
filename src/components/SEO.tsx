@@ -1,4 +1,5 @@
 import { Helmet } from 'react-helmet-async';
+import { useLocation } from 'react-router-dom';
 
 interface SEOProps {
     title: string;
@@ -19,10 +20,15 @@ export default function SEO({
     canonicalUrl,
     noindex = false,
 }: SEOProps) {
+    const { pathname } = useLocation();
     const baseUrl = 'https://www.byteflowdigiai.com';
     const fullTitle = title === 'Home' ? 'ByteFlow DigiAi' : `${title} | ByteFlow DigiAi`;
-    // Ensure no trailing slash mismatch
-    const url = (canonicalUrl || baseUrl).replace(/\/$/, "");
+
+    // Construct the canonical URL more robustly
+    // If canonicalUrl is provided, use it. Otherwise, construct from baseUrl + pathname
+    // Always remove trailing slash for consistency
+    const currentPath = pathname === '/' ? '' : pathname;
+    const finalCanonicalUrl = (canonicalUrl || `${baseUrl}${currentPath}`).replace(/\/$/, "");
 
     return (
         <Helmet>
@@ -44,11 +50,11 @@ export default function SEO({
             )}
 
             {/* Canonical URL */}
-            <link rel="canonical" href={url} />
+            <link rel="canonical" href={finalCanonicalUrl} />
 
             {/* Open Graph / Facebook */}
             <meta property="og:type" content={ogType} />
-            <meta property="og:url" content={url} />
+            <meta property="og:url" content={finalCanonicalUrl} />
             <meta property="og:title" content={fullTitle} />
             <meta property="og:description" content={description} />
             <meta property="og:image" content={ogImage} />
@@ -56,7 +62,7 @@ export default function SEO({
 
             {/* Twitter */}
             <meta name="twitter:card" content="summary_large_image" />
-            <meta name="twitter:url" content={url} />
+            <meta name="twitter:url" content={finalCanonicalUrl} />
             <meta name="twitter:title" content={fullTitle} />
             <meta name="twitter:description" content={description} />
             <meta name="twitter:image" content={ogImage} />
@@ -67,21 +73,54 @@ export default function SEO({
             <link rel="icon" type="image/jpeg" href="/logo.jpg" />
             <link rel="apple-touch-icon" href="/logo.jpg" />
 
-            {/* JSON-LD Schema */}
+            {/* JSON-LD Structured Data */}
             <script type="application/ld+json">
                 {JSON.stringify({
                     "@context": "https://schema.org",
-                    "@type": "Organization",
-                    "name": "ByteFlow DigiAi",
-                    "url": "https://www.byteflowdigiai.com",
-                    "logo": "https://www.byteflowdigiai.com/logo.jpg",
-                    "description": "ByteFlow DigiAi delivers cutting-edge IT solutions and digital marketing services.",
-                    "contactPoint": {
-                        "@type": "ContactPoint",
-                        "telephone": "+91 6900105606",
-                        "contactType": "customer service",
-                        "availableLanguage": "en"
-                    }
+                    "@graph": [
+                        {
+                            "@type": "Organization",
+                            "@id": `${baseUrl}/#organization`,
+                            "name": "ByteFlow DigiAi",
+                            "url": baseUrl,
+                            "logo": {
+                                "@type": "ImageObject",
+                                "@id": `${baseUrl}/#logo`,
+                                "url": `${baseUrl}/logo.jpg`,
+                                "contentUrl": `${baseUrl}/logo.jpg`,
+                                "width": 160,
+                                "height": 48,
+                                "caption": "ByteFlow DigiAi"
+                            },
+                            "image": { "@id": `${baseUrl}/#logo` },
+                            "description": "ByteFlow DigiAi delivers cutting-edge IT solutions and digital marketing services.",
+                            "contactPoint": {
+                                "@type": "ContactPoint",
+                                "telephone": "+91 6900105606",
+                                "contactType": "customer service",
+                                "availableLanguage": "en"
+                            }
+                        },
+                        {
+                            "@type": "WebSite",
+                            "@id": `${baseUrl}/#website`,
+                            "url": baseUrl,
+                            "name": "ByteFlow DigiAi",
+                            "description": "IT & AI Solutions | Digital Marketing Agency",
+                            "publisher": { "@id": `${baseUrl}/#organization` },
+                            "inLanguage": "en-US"
+                        },
+                        {
+                            "@type": "WebPage",
+                            "@id": `${finalCanonicalUrl}/#webpage`,
+                            "url": finalCanonicalUrl,
+                            "name": fullTitle,
+                            "isPartOf": { "@id": `${baseUrl}/#website` },
+                            "about": { "@id": `${baseUrl}/#organization` },
+                            "description": description,
+                            "inLanguage": "en-US"
+                        }
+                    ]
                 })}
             </script>
         </Helmet>
