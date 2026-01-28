@@ -14,7 +14,6 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
     if (typeof window !== 'undefined') {
       const stored = localStorage.getItem('byteflow-theme') as Theme;
       if (stored) return stored;
-      return 'dark';
     }
     return 'dark';
   });

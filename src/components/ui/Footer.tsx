@@ -87,14 +87,14 @@ export default function Footer() {
               Empowering businesses with ByteFlow DigiAI—cutting-edge IT & AI solutions and data-driven digital marketing strategies.
             </p>
             <div className="space-y-3">
-              <a href="mailto:byteflowdigiai@gmail.com" className="flex items-center gap-3 text-muted-foreground hover:text-foreground transition-colors">
+              <div className="flex items-center gap-3 text-muted-foreground">
                 <Mail className="w-5 h-5 text-blue-cyan" />
                 byteflowdigiai@gmail.com
-              </a>
-              <a href="tel:+916900105606" className="flex items-center gap-3 text-muted-foreground hover:text-foreground transition-colors">
+              </div>
+              <div className="flex items-center gap-3 text-muted-foreground">
                 <Phone className="w-5 h-5 text-green-emerald" />
                 +91 6900105606
-              </a>
+              </div>
               <div className="flex items-start gap-3 text-muted-foreground">
                 <MapPin className="w-5 h-5 text-blue-aqua shrink-0 mt-1" />
                 <div className="text-sm">
