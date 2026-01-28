@@ -79,10 +79,24 @@ export default function Index() {
   return (
     <main>
       <SEO
-        title="ByteFlow DigiAi | Official Site - IT & AI Solutions"
-        description="ByteFlow DigiAi (ByteFlow) delivers cutting-edge IT solutions, AI automation, and digital marketing services to accelerate your business growth."
-        keywords="ByteFlow, Byte, ByteFlow DigiAi, ByteFlow AI, ByteFlowDigi, AI Flow, website building in Guwahati, AI in Guwahati, Digital Marketing in Guwahati, IT company in Guwahati, software company in Guwahati"
-        canonicalUrl="https://www.byteflowdigiai.com/"
+        title="ByteFlow DigiAI | Top IT Solutions & Digital Marketing Agency"
+        description="ByteFlow DigiAI offers premium IT solutions, AI automation, and ROI-driven digital marketing. Scale your business with our expertise in web development and brand growth."
+        keywords="ByteFlow DigiAI, best IT company Guwahati, digital marketing agency Guwahati, AI automation solutions, website building Guwahati, software development India, ByteFlow, DigiAI technology, growth strategy Guwahati, performance marketing India"
+        schemaType="LocalBusiness"
+        faq={[
+          {
+            question: "What services does ByteFlow DigiAI provide?",
+            answer: "ByteFlow DigiAI provides a comprehensive range of services including Custom Website Building, AI & Automation solutions, SEO, Performance Marketing, and Social Media Growth strategies."
+          },
+          {
+            question: "Where is ByteFlow DigiAI located?",
+            answer: "We have our main branch in Bengaluru, Karnataka, and a dedicated sub-branch in Guwahati, Assam, enabling us to serve clients across India and globally."
+          },
+          {
+            question: "How can AI & Automation help my business?",
+            answer: "AI and Automation can streamline your operations, reduce manual errors, and boost productivity by automating repetitive tasks, allowing your team to focus on high-value strategic work."
+          }
+        ]}
       />
       {/* Hero Section */}
       <Hero />

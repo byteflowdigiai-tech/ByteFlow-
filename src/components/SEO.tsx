@@ -9,26 +9,132 @@ interface SEOProps {
     ogType?: string;
     canonicalUrl?: string;
     noindex?: boolean;
+    schemaType?: 'Organization' | 'LocalBusiness' | 'Service';
+    faq?: { question: string; answer: string }[];
 }
 
 export default function SEO({
     title,
     description,
-    keywords = 'IT solutions, digital marketing, AI automation, web development, SEO, performance marketing, ByteFlow DigiAi',
+    keywords = 'ByteFlow DigiAI, IT solutions, digital marketing, AI automation, web development, SEO Guwahati, performance marketing, ByteFlow, DigiAI solutions',
     ogImage = 'https://www.byteflowdigiai.com/logo.jpg',
     ogType = 'website',
     canonicalUrl,
     noindex = false,
+    schemaType = 'Organization',
+    faq,
 }: SEOProps) {
     const { pathname } = useLocation();
     const baseUrl = 'https://www.byteflowdigiai.com';
-    const fullTitle = title === 'Home' ? 'ByteFlow DigiAi' : `${title} | ByteFlow DigiAi`;
+    const fullTitle = title.includes('ByteFlow') ? title : `${title} | ByteFlow DigiAI`;
 
-    // Construct the canonical URL more robustly
-    // If canonicalUrl is provided, use it. Otherwise, construct from baseUrl + pathname
-    // Always remove trailing slash for consistency
     const currentPath = pathname === '/' ? '' : pathname;
     const finalCanonicalUrl = (canonicalUrl || `${baseUrl}${currentPath}`).replace(/\/$/, "");
+
+    const organizationSchema = {
+        "@type": "Organization",
+        "@id": `${baseUrl}/#organization`,
+        "name": "ByteFlow DigiAI",
+        "url": baseUrl,
+        "logo": {
+            "@type": "ImageObject",
+            "@id": `${baseUrl}/#logo`,
+            "url": `${baseUrl}/logo.jpg`,
+            "contentUrl": `${baseUrl}/logo.jpg`,
+            "width": 160,
+            "height": 48,
+            "caption": "ByteFlow DigiAI"
+        },
+        "image": { "@id": `${baseUrl}/#logo` },
+        "description": "ByteFlow DigiAI delivers cutting-edge IT solutions, AI automation, and data-driven digital marketing services worldwide.",
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+91 6900105606",
+            "contactType": "customer service",
+            "availableLanguage": "en"
+        },
+        "sameAs": [
+            "https://www.facebook.com/byteflowdigiai",
+            "https://www.linkedin.com/company/byteflowdigiai",
+            "https://twitter.com/byteflowdigiai"
+        ]
+    };
+
+    const localBusinessSchema = {
+        "@type": "LocalBusiness",
+        "@id": `${baseUrl}/#localbusiness`,
+        "name": "ByteFlow DigiAI",
+        "image": `${baseUrl}/logo.jpg`,
+        "url": baseUrl,
+        "telephone": "+91 6900105606",
+        "address": [
+            {
+                "@type": "PostalAddress",
+                "streetAddress": "1st Floor, Neeladri Complex, Sampige Rd, Malleshwaram",
+                "addressLocality": "Bengaluru",
+                "addressRegion": "Karnataka",
+                "postalCode": "560003",
+                "addressCountry": "IN"
+            },
+            {
+                "@type": "PostalAddress",
+                "streetAddress": "101, 1st Floor, Guwahati Research Park",
+                "addressLocality": "Guwahati",
+                "addressRegion": "Assam",
+                "postalCode": "781031",
+                "addressCountry": "IN"
+            }
+        ],
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 12.9926,
+            "longitude": 77.5684
+        },
+        "priceRange": "$$"
+    };
+
+    const faqSchema = faq ? {
+        "@type": "FAQPage",
+        "mainEntity": faq.map(item => ({
+            "@type": "Question",
+            "name": item.question,
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": item.answer
+            }
+        }))
+    } : null;
+
+    const schemas: any[] = [
+        organizationSchema,
+        {
+            "@type": "WebSite",
+            "@id": `${baseUrl}/#website`,
+            "url": baseUrl,
+            "name": "ByteFlow DigiAI",
+            "description": "IT & AI Solutions | Digital Marketing Agency",
+            "publisher": { "@id": `${baseUrl}/#organization` },
+            "inLanguage": "en-US"
+        },
+        {
+            "@type": "WebPage",
+            "@id": `${finalCanonicalUrl}/#webpage`,
+            "url": finalCanonicalUrl,
+            "name": fullTitle,
+            "isPartOf": { "@id": `${baseUrl}/#website` },
+            "about": { "@id": `${baseUrl}/#organization` },
+            "description": description,
+            "inLanguage": "en-US"
+        }
+    ];
+
+    if (schemaType === 'LocalBusiness') {
+        schemas.push(localBusinessSchema);
+    }
+
+    if (faqSchema) {
+        schemas.push(faqSchema);
+    }
 
     return (
         <Helmet>
@@ -40,7 +146,7 @@ export default function SEO({
 
             {/* Mobile Tags */}
             <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
-            <meta name="theme-color" content="#ffffff" />
+            <meta name="theme-color" content="#0a0a0a" />
 
             {/* Robots */}
             {noindex ? (
@@ -58,7 +164,7 @@ export default function SEO({
             <meta property="og:title" content={fullTitle} />
             <meta property="og:description" content={description} />
             <meta property="og:image" content={ogImage} />
-            <meta property="og:site_name" content="ByteFlow DigiAi" />
+            <meta property="og:site_name" content="ByteFlow DigiAI" />
 
             {/* Twitter */}
             <meta name="twitter:card" content="summary_large_image" />
@@ -66,7 +172,7 @@ export default function SEO({
             <meta name="twitter:title" content={fullTitle} />
             <meta name="twitter:description" content={description} />
             <meta name="twitter:image" content={ogImage} />
-            <meta name="twitter:site" content="@ByteFlow" />
+            <meta name="twitter:site" content="@ByteFlow_DigiAI" />
 
             {/* Additional Tags */}
             <meta name="author" content="ByteFlow DigiAI" />
@@ -77,50 +183,7 @@ export default function SEO({
             <script type="application/ld+json">
                 {JSON.stringify({
                     "@context": "https://schema.org",
-                    "@graph": [
-                        {
-                            "@type": "Organization",
-                            "@id": `${baseUrl}/#organization`,
-                            "name": "ByteFlow DigiAi",
-                            "url": baseUrl,
-                            "logo": {
-                                "@type": "ImageObject",
-                                "@id": `${baseUrl}/#logo`,
-                                "url": `${baseUrl}/logo.jpg`,
-                                "contentUrl": `${baseUrl}/logo.jpg`,
-                                "width": 160,
-                                "height": 48,
-                                "caption": "ByteFlow DigiAi"
-                            },
-                            "image": { "@id": `${baseUrl}/#logo` },
-                            "description": "ByteFlow DigiAi delivers cutting-edge IT solutions and digital marketing services.",
-                            "contactPoint": {
-                                "@type": "ContactPoint",
-                                "telephone": "+91 6900105606",
-                                "contactType": "customer service",
-                                "availableLanguage": "en"
-                            }
-                        },
-                        {
-                            "@type": "WebSite",
-                            "@id": `${baseUrl}/#website`,
-                            "url": baseUrl,
-                            "name": "ByteFlow DigiAi",
-                            "description": "IT & AI Solutions | Digital Marketing Agency",
-                            "publisher": { "@id": `${baseUrl}/#organization` },
-                            "inLanguage": "en-US"
-                        },
-                        {
-                            "@type": "WebPage",
-                            "@id": `${finalCanonicalUrl}/#webpage`,
-                            "url": finalCanonicalUrl,
-                            "name": fullTitle,
-                            "isPartOf": { "@id": `${baseUrl}/#website` },
-                            "about": { "@id": `${baseUrl}/#organization` },
-                            "description": description,
-                            "inLanguage": "en-US"
-                        }
-                    ]
+                    "@graph": schemas
                 })}
             </script>
         </Helmet>

@@ -30,10 +30,10 @@ export default function Contact() {
   return (
     <main>
       <SEO
-        title="Contact Us - Get in Touch with ByteFlow"
-        description="Contact ByteFlow DigiAI for IT solutions and digital marketing services. Main office in Bengaluru, branch in Guwahati. Email: byteflowdigiai@gmail.com | Phone: +91 6900105606"
-        keywords="contact ByteFlow, IT services Bengaluru, digital marketing agency contact, ByteFlow office Bengaluru, ByteFlow Guwahati"
-        canonicalUrl="https://www.byteflowdigiai.com/contact"
+        title="Contact Us | ByteFlow DigiAI Office Bengaluru & Guwahati"
+        description="Get in touch with ByteFlow DigiAI. Visit our offices in Bengaluru or Guwahati for world-class IT and digital marketing services. Email: byteflowdigiai@gmail.com."
+        keywords="ByteFlow office Bengaluru, ByteFlow GuwahatiAddress, digital marketing agency Guwahati, IT services Bengaluru, contact ByteFlow DigiAI, best IT company Assam"
+        schemaType="LocalBusiness"
       />
       <PageHero
         badge="Contact Us"

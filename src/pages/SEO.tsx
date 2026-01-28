@@ -41,10 +41,19 @@ export default function SEO() {
   return (
     <main>
       <SEOHead
-        title="SEO Services - Boost Your Organic Traffic & Rankings"
-        description="Professional SEO services to increase your search engine rankings and organic traffic. Data-driven strategies, technical SEO, content optimization, and link building."
-        keywords="SEO services, search engine optimization, organic traffic, keyword optimization, SEO agency, link building, technical SEO"
-        canonicalUrl="https://www.byteflowdigiai.com/digital-marketing/seo"
+        title="SEO Services Guwahati & Bengaluru | Boost Organic Rankings"
+        description="Rank #1 with our professional SEO services. We specialize in technical SEO, content optimization, and high-quality link building for businesses in Guwahati, Bengaluru, and beyond."
+        keywords="SEO services Guwahati, best SEO agency Bengaluru, search engine optimization India, rank #1 on Google, technical SEO audits, local SEO services, organic growth strategies"
+        faq={[
+          {
+            question: "How long does it take to see SEO results?",
+            answer: "While some technical fixes show impact quickly, most SEO campaigns take 3 to 6 months to show significant ranking improvements as search engines re-index and trust the new optimizations."
+          },
+          {
+            question: "Do you provide Local SEO services?",
+            answer: "Yes, we specialize in Local SEO to help businesses in Guwahati, Bengaluru, and other regions dominate their local search results and attract nearby customers."
+          }
+        ]}
       />
       <PageHero
         badge="SEO Services"

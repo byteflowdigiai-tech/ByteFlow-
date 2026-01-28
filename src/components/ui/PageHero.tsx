@@ -99,22 +99,20 @@ export default function PageHero({ badge, title, titleHighlight, subtitle, theme
           )}
 
           {/* Title */}
-          {/* Title - Hidden for 'work' and 'contact' variants as it's in the background image */}
-          {variant !== 'work' && variant !== 'contact' && (
-            <motion.h1
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.1 }}
-              className="font-display text-4xl sm:text-5xl md:text-6xl font-bold leading-tight mb-6"
-            >
-              {title}{' '}
-              {titleHighlight && (
-                <span className={isBlue ? 'text-gradient-blue' : 'text-gradient-green'}>
-                  {titleHighlight}
-                </span>
-              )}
-            </motion.h1>
-          )}
+          {/* Title - Always rendered for SEO */}
+          <motion.h1
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.1 }}
+            className={`font-display text-4xl sm:text-5xl md:text-6xl font-bold leading-tight mb-6 ${(variant === 'work' || variant === 'contact') ? 'sr-only md:not-sr-only' : ''}`}
+          >
+            {title}{' '}
+            {titleHighlight && (
+              <span className={isBlue ? 'text-gradient-blue' : 'text-gradient-green'}>
+                {titleHighlight}
+              </span>
+            )}
+          </motion.h1>
 
           {/* Subtitle - Hidden only for 'work' variant */}
           {variant !== 'work' && (
