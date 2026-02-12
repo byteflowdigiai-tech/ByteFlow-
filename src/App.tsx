@@ -23,6 +23,11 @@ import NotFound from "./pages/NotFound";
 import OurWork from "./pages/OurWork";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import TermsConditions from "./pages/TermsConditions";
+import GuwahatiHub from "./pages/locations/GuwahatiHub";
+import GuwahatiIT from "./pages/locations/GuwahatiIT";
+import GuwahatiMarketing from "./pages/locations/GuwahatiMarketing";
+import GuwahatiSEO from "./pages/locations/GuwahatiSEO";
+import GuwahatiWebDesign from "./pages/locations/GuwahatiWebDesign";
 
 const queryClient = new QueryClient();
 
@@ -53,6 +58,15 @@ const App = () => (
                 <Route path="/contact" element={<Contact />} />
                 <Route path="/privacy-policy" element={<PrivacyPolicy />} />
                 <Route path="/terms-conditions" element={<TermsConditions />} />
+                <Route path="/terms-conditions" element={<TermsConditions />} />
+
+                {/* Location Pages */}
+                <Route path="/guwahati" element={<GuwahatiHub />} />
+                <Route path="/guwahati/it-solutions" element={<GuwahatiIT />} />
+                <Route path="/guwahati/digital-marketing" element={<GuwahatiMarketing />} />
+                <Route path="/guwahati/seo" element={<GuwahatiSEO />} />
+                <Route path="/guwahati/web-design" element={<GuwahatiWebDesign />} />
+
                 <Route path="*" element={<NotFound />} />
               </Routes>
             </div>

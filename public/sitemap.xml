@@ -1,4 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+  SEO TARGET KEYWORDS FOR BYTEFLOW DIGIAI GUWAHATI
+  
+  PRIMARY: digital marketing agency guwahati, seo company guwahati, web design company guwahati, website development company guwahati, ai automation company guwahati, it solutions company guwahati, social media marketing guwahati, performance marketing agency guwahati, digital marketing services guwahati, seo services guwahati
+  
+  HIGH-INTENT: best digital marketing agency guwahati, top digital marketing agency guwahati, affordable seo company guwahati, professional web design company guwahati, website development services guwahati, ai automation services guwahati, lead generation agency guwahati, online marketing company guwahati, internet marketing agency guwahati, google ads agency guwahati
+  
+  SERVICES: search engine optimization guwahati, local seo services guwahati, technical seo company guwahati, website design services guwahati, responsive web design guwahati, business website development guwahati, custom website development guwahati, social media management guwahati, instagram marketing agency guwahati, facebook ads agency guwahati, performance marketing services guwahati, paid ads agency guwahati, ai business automation guwahati, automation services guwahati, business automation company guwahati
+  
+  LOCATION: digital marketing agency in guwahati assam, seo company in guwahati assam, web design company in guwahati assam, website development company in guwahati assam, ai automation company in guwahati assam, it company in guwahati assam, digital marketing services in guwahati assam, seo services in guwahati assam, web development company in guwahati assam, social media marketing company in guwahati assam
+  
+  LONG-TAIL: best seo company in guwahati for small business, affordable digital marketing services guwahati, best website development company in guwahati, top seo agency in guwahati assam, professional digital marketing company guwahati, business automation services in guwahati, ai automation for business guwahati, lead generation services guwahati, best social media marketing agency guwahati, website development company guwahati price
+  
+  BRAND: byteflow digiai, byteflow digiai guwahati, byteflow digiai digital marketing, byteflow digiai seo services, byteflow digiai web development, byteflow digiai ai automation, byteflow digiai it solutions
+-->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <!-- Homepage -->
   <url>
@@ -108,5 +123,41 @@
     <lastmod>2026-01-10</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
+  </url>
+
+  <!-- Local Landing Pages -->
+  <url>
+    <loc>https://www.byteflowdigiai.com/guwahati</loc>
+    <lastmod>2026-02-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <url>
+    <loc>https://www.byteflowdigiai.com/guwahati/it-solutions</loc>
+    <lastmod>2026-02-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <url>
+    <loc>https://www.byteflowdigiai.com/guwahati/digital-marketing</loc>
+    <lastmod>2026-02-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <url>
+    <loc>https://www.byteflowdigiai.com/guwahati/seo</loc>
+    <lastmod>2026-02-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <url>
+    <loc>https://www.byteflowdigiai.com/guwahati/web-design</loc>
+    <lastmod>2026-02-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
   </url>
 </urlset>

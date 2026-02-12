@@ -6,7 +6,8 @@ import ConsultationForm from '@/components/ui/ConsultationForm';
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from '@/components/ui/dialog';
 
 const contactInfo = [
-  { icon: Mail, label: 'Email', value: 'byteflowdigiai@gmail.com', href: 'mailto:byteflowdigiai@gmail.com' },
+  { icon: Mail, label: 'Email', value: 'info@byteflowdigiai.com', href: 'mailto:info@byteflowdigiai.com' },
+  { icon: Mail, label: 'Support Email', value: 'byteflowdigiai@gmail.com', href: 'mailto:byteflowdigiai@gmail.com' },
   { icon: Phone, label: 'Phone', value: '+91 6900105606', href: 'tel:+91 6900105606' },
   {
     icon: MapPin,

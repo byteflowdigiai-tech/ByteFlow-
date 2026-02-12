@@ -14,7 +14,7 @@ export default function Hero() {
         <div className="absolute inset-0">
           <img
             src={heroImage}
-            alt="ByteFlow DigiAI - Future of Digital Innovation"
+            alt="Digital Marketing Agency in Guwahati"
             className="w-full h-full object-cover opacity-50"
             width={1920}
             height={1080}
@@ -41,7 +41,7 @@ export default function Hero() {
         >
           <img
             src={heroImage}
-            alt="ByteFlow IT and AI Solutions background"
+            alt="Website Development Company Guwahati"
             className="w-full h-full object-cover"
             width={1920}
             height={1080}
@@ -69,7 +69,7 @@ export default function Hero() {
         >
           <img
             src={heroImage}
-            alt="ByteFlow Digital Marketing background"
+            alt="SEO Services in Guwahati ByteFlow DigiAI"
             className="w-full h-full object-cover"
             width={1920}
             height={1080}
@@ -94,7 +94,7 @@ export default function Hero() {
             className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass mb-8"
           >
             <span className="w-2 h-2 rounded-full bg-green-emerald animate-pulse" />
-            <span className="text-sm font-medium text-muted-foreground">Transforming Businesses Worldwide</span>
+            <span className="text-sm font-medium text-muted-foreground">Best Digital Marketing Agency in Guwahati</span>
           </motion.div>
 
           {/* Main Heading */}
@@ -104,8 +104,8 @@ export default function Hero() {
             transition={{ duration: 0.6, delay: 0.1 }}
             className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6"
           >
-            ByteFlow: Powering the Future of{' '}
-            <span className="text-gradient-mixed">Digital Innovation</span>
+            Digital Marketing, SEO, Web Development &{' '}
+            <span className="text-gradient-mixed">AI Automation Company in Guwahati</span>
           </motion.h1>
 
           {/* Subtitle */}

@@ -50,6 +50,7 @@ export default function SEO({
         "contactPoint": {
             "@type": "ContactPoint",
             "telephone": "+91 6900105606",
+            "email": "info@byteflowdigiai.com",
             "contactType": "customer service",
             "availableLanguage": "en"
         },
