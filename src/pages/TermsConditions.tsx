@@ -7,8 +7,8 @@ export default function TermsConditions() {
         <main>
             <SEO
                 title="Terms & Conditions"
-                description="ByteFlow DigiAI Terms and Conditions. Read our terms of service for using our website and services."
-                keywords="terms and conditions, terms of service, ByteFlow terms, legal terms"
+                description="Byteflow DigiAi Terms and Conditions. Read our terms of service for using our website and services."
+                keywords="terms and conditions, terms of service, Byteflow DigiAi terms, legal terms"
                 canonicalUrl="https://www.byteflowdigiai.com/terms-conditions"
             />
             <PageHero
@@ -43,14 +43,14 @@ export default function TermsConditions() {
                                     <div>
                                         <h2 className="text-2xl font-display font-bold mb-4">1. Agreement to Terms</h2>
                                         <p className="text-muted-foreground leading-relaxed">
-                                            By accessing or using the ByteFlow DigiAI website (byteflowdigiai.com) and services, you agree to be bound by these Terms and Conditions. If you disagree with any part of these terms, you may not access our website or use our services.
+                                            By accessing or using the Byteflow DigiAi website (byteflowdigiai.com) and services, you agree to be bound by these Terms and Conditions. If you disagree with any part of these terms, you may not access our website or use our services.
                                         </p>
                                     </div>
 
                                     <div>
                                         <h2 className="text-2xl font-display font-bold mb-4">2. Services</h2>
                                         <p className="text-muted-foreground leading-relaxed mb-4">
-                                            ByteFlow DigiAI provides:
+                                            Byteflow DigiAi provides:
                                         </p>
                                         <ul className="list-disc list-inside text-muted-foreground space-y-2">
                                             <li>IT solutions and custom software development</li>
@@ -80,7 +80,7 @@ export default function TermsConditions() {
                                     <div>
                                         <h2 className="text-2xl font-display font-bold mb-4">4. Intellectual Property</h2>
                                         <p className="text-muted-foreground leading-relaxed mb-4">
-                                            All content on this website, including but not limited to text, graphics, logos, images, and software, is the property of ByteFlow DigiAI and is protected by copyright, trademark, and other intellectual property laws.
+                                            All content on this website, including but not limited to text, graphics, logos, images, and software, is the property of Byteflow DigiAi and is protected by copyright, trademark, and other intellectual property laws.
                                         </p>
                                         <p className="text-muted-foreground leading-relaxed">
                                             You may not reproduce, distribute, modify, or create derivative works from our content without express written permission.
@@ -90,7 +90,7 @@ export default function TermsConditions() {
                                     <div>
                                         <h2 className="text-2xl font-display font-bold mb-4">5. Service Agreements</h2>
                                         <p className="text-muted-foreground leading-relaxed mb-4">
-                                            Specific services provided by ByteFlow DigiAI will be governed by separate service agreements. These Terms and Conditions apply in addition to any service-specific agreements.
+                                            Specific services provided by Byteflow DigiAi will be governed by separate service agreements. These Terms and Conditions apply in addition to any service-specific agreements.
                                         </p>
                                     </div>
 
@@ -117,7 +117,7 @@ export default function TermsConditions() {
                                     <div>
                                         <h2 className="text-2xl font-display font-bold mb-4">8. Limitation of Liability</h2>
                                         <p className="text-muted-foreground leading-relaxed mb-4">
-                                            To the fullest extent permitted by law, ByteFlow DigiAI shall not be liable for:
+                                            To the fullest extent permitted by law, Byteflow DigiAi shall not be liable for:
                                         </p>
                                         <ul className="list-disc list-inside text-muted-foreground space-y-2">
                                             <li>Indirect, incidental, or consequential damages</li>
@@ -143,7 +143,7 @@ export default function TermsConditions() {
                                     <div>
                                         <h2 className="text-2xl font-display font-bold mb-4">10. Indemnification</h2>
                                         <p className="text-muted-foreground leading-relaxed">
-                                            You agree to indemnify and hold ByteFlow DigiAI harmless from any claims, damages, losses, or expenses arising from your use of our website or services, or your violation of these Terms and Conditions.
+                                            You agree to indemnify and hold Byteflow DigiAi harmless from any claims, damages, losses, or expenses arising from your use of our website or services, or your violation of these Terms and Conditions.
                                         </p>
                                     </div>
 
@@ -181,9 +181,9 @@ export default function TermsConditions() {
                                             For questions about these Terms and Conditions, please contact us:
                                         </p>
                                         <div className="bg-muted/50 p-6 rounded-xl border border-border">
-                                            <p className="text-foreground mb-2"><strong>ByteFlow DigiAI</strong></p>
+                                            <p className="text-foreground mb-2"><strong>Byteflow DigiAi</strong></p>
                                             <p className="text-muted-foreground mb-2">Email: byteflowdigiai@gmail.com</p>
-                                            <p className="text-muted-foreground mb-2">Phone: +91 6900105606</p>
+                                            <p className="text-muted-foreground mb-2">Phone: +91 9181015606</p>
                                             <p className="text-muted-foreground">
                                                 Address: 1st Floor, Neeladri Complex, 10th Cross, 2nd Main, Sampige Rd, Malleshwaram, Bengaluru, Karnataka 560003
                                             </p>

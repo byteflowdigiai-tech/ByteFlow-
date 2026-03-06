@@ -8,8 +8,8 @@ export default function BookConsultation() {
     <main>
       <SEO
         title="Book a Free Consultation - Start Your Digital Journey"
-        description="Schedule a free consultation with ByteFlow DigiAI experts. Discuss your IT solutions, digital marketing needs, and get a customized strategy for your business growth."
-        keywords="free consultation, digital marketing consultation, IT services consultation, book consultation ByteFlow, business growth strategy"
+        description="Schedule a free consultation with Byteflow DigiAi experts. Discuss your IT solutions, digital marketing needs, and get a customized strategy for your business growth."
+        keywords="free consultation, digital marketing consultation, IT services consultation, book consultation Byteflow DigiAi, business growth strategy"
         canonicalUrl="https://www.byteflowdigiai.com/book-consultation"
       />
       <PageHero

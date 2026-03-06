@@ -61,7 +61,7 @@ export default function ITSolutions() {
         <main>
             <SEO
                 title="IT Solutions - Custom Software & Technology Services"
-                description="ByteFlow delivers enterprise-grade IT solutions including custom web development, AI automation, and digital transformation services. Scale your business with cutting-edge technology."
+                description="Byteflow DigiAi delivers enterprise-grade IT solutions including custom web development, AI automation, and digital transformation services. Scale your business with cutting-edge technology."
                 keywords="IT solutions, custom software development, enterprise IT services, technology consulting, digital transformation"
                 canonicalUrl="https://www.byteflowdigiai.com/it-solutions"
             />
@@ -120,7 +120,7 @@ export default function ITSolutions() {
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                         <div>
                             <h2 className="font-display text-3xl md:text-4xl font-bold mb-6">
-                                Why Partner with <span className="text-gradient-blue">ByteFlow DigiAI</span>?
+                                Why Partner with <span className="text-gradient-blue">Byteflow DigiAi</span>?
                             </h2>
                             <p className="text-lg text-muted-foreground mb-8">
                                 We don't just build technology—we build partnerships. Our team works closely
@@ -155,7 +155,7 @@ export default function ITSolutions() {
                                 <div className="w-full h-full rounded-3xl overflow-hidden glass p-4 flex items-center justify-center">
                                     <img
                                         src={benefitsInfographic}
-                                        alt="Why Partner with ByteFlow DigiAI"
+                                        alt="Why Partner with Byteflow DigiAi"
                                         className="w-full h-full object-contain"
                                     />
                                 </div>

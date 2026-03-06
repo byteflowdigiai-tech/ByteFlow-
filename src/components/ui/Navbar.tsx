@@ -27,6 +27,7 @@ const navLinks = [
     ],
   },
   { name: 'Our Work', path: '/our-work' },
+  { name: 'Our Team', path: '/our-team' },
   { name: 'About', path: '/about' },
   { name: 'Contact', path: '/contact' },
 ];
@@ -66,7 +67,7 @@ export default function Navbar() {
             <div className="relative h-10 md:h-12 overflow-hidden rounded-lg">
               <img
                 src={logo}
-                alt="ByteFlow DigiAI Logo"
+                alt="Byteflow DigiAi Logo"
                 className="h-full w-auto object-contain"
                 width={160}
                 height={48}
@@ -74,7 +75,7 @@ export default function Navbar() {
               <div className="absolute inset-0 bg-gradient-to-br from-blue-cyan to-green-emerald opacity-0 group-hover:opacity-10 transition-opacity" />
             </div>
             <span className="font-display font-bold text-[10px] md:text-xs tracking-wider text-foreground uppercase mt-1">
-              ByteFlow <span className="text-blue-cyan">DigiAI</span>
+              Byteflow <span className="text-blue-cyan">DigiAI</span>
             </span>
           </Link>
 

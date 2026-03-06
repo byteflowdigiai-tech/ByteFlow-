@@ -66,7 +66,7 @@ export default function AIAutomation() {
     <main>
       <SEO
         title="AI & Automation - Intelligent Business Solutions"
-        description="Transform your business with AI-powered automation. Streamline operations, reduce costs, and boost productivity with ByteFlow's intelligent automation solutions."
+        description="Transform your business with AI-powered automation. Streamline operations, reduce costs, and boost productivity with Byteflow DigiAi's intelligent automation solutions."
         keywords="AI automation, artificial intelligence, business automation, intelligent automation, workflow automation, AI solutions"
         canonicalUrl="https://www.byteflowdigiai.com/it-solutions/ai-automation"
       />

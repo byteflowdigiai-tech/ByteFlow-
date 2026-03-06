@@ -46,9 +46,9 @@ export default function GuwahatiHub() {
     return (
         <main>
             <SEO
-                title="ByteFlow DigiAI Guwahati | Best IT Solution & Digital Marketing Agency"
-                description="ByteFlow DigiAI is Guwahati's premier IT and Digital Marketing agency based in Guwahati Research Park. We offer web design, SEO, and software solutions for businesses in Assam."
-                keywords="digital marketing agency guwahati, seo company guwahati, web design company guwahati, website development company guwahati, ai automation company guwahati, it solutions company guwahati, best digital marketing agency guwahati, top digital marketing agency guwahati, byteflow digiai, byteflow digiai guwahati, digital marketing agency in guwahati assam, it company in guwahati assam"
+                title="Byteflow DigiAi Guwahati | Best IT Solution & Digital Marketing Agency"
+                description="Byteflow DigiAi is Guwahati's premier IT and Digital Marketing agency based in Guwahati Research Park. We offer web design, SEO, and software solutions for businesses in Assam."
+                keywords="digital marketing agency guwahati, seo company guwahati, web design company guwahati, website development company guwahati, ai automation company guwahati, it solutions company guwahati, best digital marketing agency guwahati, top digital marketing agency guwahati, Byteflow DigiAi, Byteflow DigiAi guwahati, digital marketing agency in guwahati assam, it company in guwahati assam"
                 canonicalUrl="https://www.byteflowdigiai.com/guwahati"
                 schemaType="LocalBusiness"
             />
@@ -125,11 +125,11 @@ export default function GuwahatiHub() {
                             <div className="space-y-4 text-muted-foreground">
                                 <p className="flex items-center gap-2">
                                     <span className="font-bold text-foreground">Address:</span>
-                                    ByteFlow DigiAI, 101, 1st Floor, Guwahati Research Park, 781034
+                                    Byteflow DigiAi, 101, 1st Floor, Guwahati Research Park, 781034
                                 </p>
                                 <p className="flex items-center gap-2">
                                     <span className="font-bold text-foreground">Phone:</span>
-                                    +91 6900105606
+                                    +91 9181015606
                                 </p>
                                 <p className="flex items-center gap-2">
                                     <span className="font-bold text-foreground">Serving Areas:</span>

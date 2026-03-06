@@ -16,7 +16,7 @@ interface SEOProps {
 export default function SEO({
     title,
     description,
-    keywords = 'ByteFlow DigiAI, IT solutions, digital marketing, AI automation, web development, SEO Guwahati, performance marketing, ByteFlow, DigiAI solutions',
+    keywords = 'Byteflow DigiAi, IT solutions, digital marketing, AI automation, web development, SEO Guwahati, performance marketing, Byteflow DigiAi, DigiAI solutions',
     ogImage = 'https://www.byteflowdigiai.com/logo.jpg',
     ogType = 'website',
     canonicalUrl,
@@ -26,7 +26,7 @@ export default function SEO({
 }: SEOProps) {
     const { pathname } = useLocation();
     const baseUrl = 'https://www.byteflowdigiai.com';
-    const fullTitle = title.includes('ByteFlow') ? title : `${title} | ByteFlow DigiAI`;
+    const fullTitle = title.includes('Byteflow DigiAi') ? title : `${title} | Byteflow DigiAi`;
 
     const currentPath = pathname === '/' ? '' : pathname;
     const finalCanonicalUrl = (canonicalUrl || `${baseUrl}${currentPath}`).replace(/\/$/, "");
@@ -34,7 +34,7 @@ export default function SEO({
     const organizationSchema = {
         "@type": "Organization",
         "@id": `${baseUrl}/#organization`,
-        "name": "ByteFlow DigiAI",
+        "name": "Byteflow DigiAi",
         "url": baseUrl,
         "logo": {
             "@type": "ImageObject",
@@ -43,13 +43,13 @@ export default function SEO({
             "contentUrl": `${baseUrl}/logo.jpg`,
             "width": 160,
             "height": 48,
-            "caption": "ByteFlow DigiAI"
+            "caption": "Byteflow DigiAi"
         },
         "image": { "@id": `${baseUrl}/#logo` },
-        "description": "ByteFlow DigiAI delivers cutting-edge IT solutions, AI automation, and data-driven digital marketing services worldwide.",
+        "description": "Byteflow DigiAi delivers cutting-edge IT solutions, AI automation, and data-driven digital marketing services worldwide.",
         "contactPoint": {
             "@type": "ContactPoint",
-            "telephone": "+91 6900105606",
+            "telephone": "+91 9181015606",
             "email": "info@byteflowdigiai.com",
             "contactType": "customer service",
             "availableLanguage": "en"
@@ -64,10 +64,10 @@ export default function SEO({
     const localBusinessSchema = {
         "@type": "LocalBusiness",
         "@id": `${baseUrl}/#localbusiness`,
-        "name": "ByteFlow DigiAI",
+        "name": "Byteflow DigiAi",
         "image": `${baseUrl}/logo.jpg`,
         "url": baseUrl,
-        "telephone": "+91 6900105606",
+        "telephone": "+91 9181015606",
         "address": [
             {
                 "@type": "PostalAddress",
@@ -112,7 +112,7 @@ export default function SEO({
             "@type": "WebSite",
             "@id": `${baseUrl}/#website`,
             "url": baseUrl,
-            "name": "ByteFlow DigiAI",
+            "name": "Byteflow DigiAi",
             "description": "IT & AI Solutions | Digital Marketing Agency",
             "publisher": { "@id": `${baseUrl}/#organization` },
             "inLanguage": "en-US"
@@ -165,7 +165,7 @@ export default function SEO({
             <meta property="og:title" content={fullTitle} />
             <meta property="og:description" content={description} />
             <meta property="og:image" content={ogImage} />
-            <meta property="og:site_name" content="ByteFlow DigiAI" />
+            <meta property="og:site_name" content="Byteflow DigiAi" />
 
             {/* Twitter */}
             <meta name="twitter:card" content="summary_large_image" />
@@ -173,10 +173,10 @@ export default function SEO({
             <meta name="twitter:title" content={fullTitle} />
             <meta name="twitter:description" content={description} />
             <meta name="twitter:image" content={ogImage} />
-            <meta name="twitter:site" content="@ByteFlow_DigiAI" />
+            <meta name="twitter:site" content="@Byteflow DigiAi_DigiAI" />
 
             {/* Additional Tags */}
-            <meta name="author" content="ByteFlow DigiAI" />
+            <meta name="author" content="Byteflow DigiAi" />
             <link rel="icon" type="image/jpeg" href="/logo.jpg" />
             <link rel="apple-touch-icon" href="/logo.jpg" />
 

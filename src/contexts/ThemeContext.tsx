@@ -12,7 +12,7 @@ const ThemeContext = createContext<ThemeContextType | undefined>(undefined);
 export function ThemeProvider({ children }: { children: React.ReactNode }) {
   const [theme, setTheme] = useState<Theme>(() => {
     if (typeof window !== 'undefined') {
-      const stored = localStorage.getItem('byteflow-theme') as Theme;
+      const stored = localStorage.getItem('Byteflow DigiAi-theme') as Theme;
       if (stored) return stored;
     }
     return 'dark';
@@ -22,7 +22,7 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
     const root = document.documentElement;
     root.classList.remove('light', 'dark');
     root.classList.add(theme);
-    localStorage.setItem('byteflow-theme', theme);
+    localStorage.setItem('Byteflow DigiAi-theme', theme);
   }, [theme]);
 
   const toggleTheme = () => {

@@ -7,8 +7,8 @@ export default function PrivacyPolicy() {
         <main>
             <SEO
                 title="Privacy Policy"
-                description="ByteFlow DigiAI Privacy Policy. Learn how we collect, use, and protect your personal information."
-                keywords="privacy policy, data protection, ByteFlow privacy, GDPR compliance"
+                description="Byteflow DigiAi Privacy Policy. Learn how we collect, use, and protect your personal information."
+                keywords="privacy policy, data protection, Byteflow DigiAi privacy, GDPR compliance"
                 canonicalUrl="https://www.byteflowdigiai.com/privacy-policy"
             />
             <PageHero
@@ -43,7 +43,7 @@ export default function PrivacyPolicy() {
                                     <div>
                                         <h2 className="text-2xl font-display font-bold mb-4">1. Introduction</h2>
                                         <p className="text-muted-foreground leading-relaxed">
-                                            ByteFlow DigiAI ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website byteflowdigiai.com and use our services.
+                                            Byteflow DigiAi ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website byteflowdigiai.com and use our services.
                                         </p>
                                     </div>
 
@@ -170,9 +170,9 @@ export default function PrivacyPolicy() {
                                             If you have any questions about this Privacy Policy, please contact us:
                                         </p>
                                         <div className="bg-muted/50 p-6 rounded-xl border border-border">
-                                            <p className="text-foreground mb-2"><strong>ByteFlow DigiAI</strong></p>
+                                            <p className="text-foreground mb-2"><strong>Byteflow DigiAi</strong></p>
                                             <p className="text-muted-foreground mb-2">Email: byteflowdigiai@gmail.com</p>
-                                            <p className="text-muted-foreground mb-2">Phone: +91 6900105606</p>
+                                            <p className="text-muted-foreground mb-2">Phone: +91 9181015606</p>
                                             <p className="text-muted-foreground">
                                                 Address: 1st Floor, Neeladri Complex, 10th Cross, 2nd Main, Sampige Rd, Malleshwaram, Bengaluru, Karnataka 560003
                                             </p>

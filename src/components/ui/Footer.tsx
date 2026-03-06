@@ -53,7 +53,7 @@ export default function Footer() {
               Ready to <span className="text-gradient-mixed">Transform</span> Your Business?
             </h2>
             <p className="text-muted-foreground text-lg mb-8">
-              Let's discuss how ByteFlow can accelerate your digital growth.
+              Let's discuss how Byteflow DigiAi can accelerate your digital growth.
             </p>
             <Link
               to="/book-consultation"
@@ -73,18 +73,18 @@ export default function Footer() {
               <div className="h-16 md:h-20 overflow-hidden rounded-xl mb-2">
                 <img
                   src={logo}
-                  alt="ByteFlow DigiAI Logo"
+                  alt="Byteflow DigiAi Logo"
                   className="h-full w-auto object-contain"
                   width={160}
                   height={48}
                 />
               </div>
               <span className="font-display font-bold text-lg md:text-xl tracking-wide text-foreground">
-                ByteFlow <span className="text-gradient-mixed">DigiAI</span>
+                Byteflow <span className="text-gradient-mixed">DigiAI</span>
               </span>
             </Link>
             <p className="text-muted-foreground mb-6 max-w-sm">
-              Empowering businesses with ByteFlow DigiAI—cutting-edge IT & AI solutions and data-driven digital marketing strategies.
+              Empowering businesses with Byteflow DigiAi—cutting-edge IT & AI solutions and data-driven digital marketing strategies.
             </p>
             <div className="space-y-3">
               <div className="flex items-start gap-3 text-muted-foreground">
@@ -96,7 +96,7 @@ export default function Footer() {
               </div>
               <div className="flex items-center gap-3 text-muted-foreground">
                 <Phone className="w-5 h-5 text-green-emerald" />
-                +91 6900105606
+                +91 9181015606
               </div>
               <div className="flex items-start gap-3 text-muted-foreground">
                 <MapPin className="w-5 h-5 text-blue-aqua shrink-0 mt-1" />
@@ -168,7 +168,7 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="py-6 border-t border-border flex items-center justify-center gap-4">
           <p className="text-sm text-muted-foreground text-center">
-            © {currentYear} ByteFlow DigiAI. All rights reserved.
+            © {currentYear} Byteflow DigiAi. All rights reserved.
           </p>
         </div>
       </div>

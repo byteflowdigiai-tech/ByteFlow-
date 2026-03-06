@@ -21,6 +21,7 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 import OurWork from "./pages/OurWork";
+import OurTeam from "./pages/OurTeam";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import TermsConditions from "./pages/TermsConditions";
 import GuwahatiHub from "./pages/locations/GuwahatiHub";
@@ -51,6 +52,7 @@ const App = () => (
                 <Route path="/digital-marketing/seo" element={<SEO />} />
                 <Route path="/digital-marketing/social-media-marketing" element={<SocialMediaMarketing />} />
                 <Route path="/our-work" element={<OurWork />} />
+                <Route path="/our-team" element={<OurTeam />} />
                 <Route path="/digital-marketing/performance-marketing" element={<PerformanceMarketing />} />
                 <Route path="/digital-marketing/growth-strategy" element={<GrowthStrategy />} />
                 <Route path="/book-consultation" element={<BookConsultation />} />

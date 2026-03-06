@@ -51,7 +51,7 @@ export default function PageHero({ badge, title, titleHighlight, subtitle, theme
         {(variant === 'it-solutions' || variant === 'website-building' || variant === 'ai' || variant === 'digital-marketing' || variant === 'social-media' || variant === 'performance-marketing' || variant === 'seo' || variant === 'growth' || variant === 'work' || variant === 'about' || variant === 'contact' || variant === 'consultation') ? (
           <motion.img
             src={getHeroImage()}
-            alt={`ByteFlow ${isBlue ? 'IT & AI Solutions' : 'Digital Marketing'} background`}
+            alt={`Byteflow DigiAi ${isBlue ? 'IT & AI Solutions' : 'Digital Marketing'} background`}
             className="w-full h-full object-cover"
             width={1280}
             height={720}
@@ -69,7 +69,7 @@ export default function PageHero({ badge, title, titleHighlight, subtitle, theme
         ) : (
           <img
             src={getHeroImage()}
-            alt={`ByteFlow ${isBlue ? 'IT & AI Solutions' : 'Digital Marketing'} background`}
+            alt={`Byteflow DigiAi ${isBlue ? 'IT & AI Solutions' : 'Digital Marketing'} background`}
             className="w-full h-full object-cover"
             width={1280}
             height={720}

@@ -4,43 +4,59 @@ import SEO from '@/components/SEO';
 import PageHero from '@/components/ui/PageHero';
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from '@/components/ui/dialog';
 import { Badge } from '@/components/ui/badge';
+import itGyantrika from '@/assets/it-case-gyantrika.png';
 import itAurum from '@/assets/it-case-aurum.png';
-import itAssamTea from '@/assets/it-case-assam-tea.png';
-import itBloomGift from '@/assets/it-case-bloom-gift.png';
+import itEnvionix from '@/assets/it-case-envionix.png';
+import itOlatus from '@/assets/it-case-olatus.png';
 import itVendGenius from '@/assets/it-case-vendgenius.png';
-import itElysee from '@/assets/it-case-elysee.png';
 import digitalCase1 from '@/assets/digital-solutions-case-1.jpg';
 import digitalCase2 from '@/assets/digital-solutions-case-2.jpg';
 import digitalCase3 from '@/assets/digital-solutions-case-3.jpg';
+import digitalCase4 from '@/assets/digital-solutions-case-4.jpg';
+import digitalCase5 from '@/assets/digital-solutions-case-5.png';
 
 // Mock Data for Projects
-const projects = [
+interface Project {
+    id: number;
+    category: string;
+    title: string;
+    description: string;
+    image: string;
+    technologies: string[];
+    outcome: string;
+    link?: string;
+}
+
+const projects: Project[] = [
     {
         id: 1,
         category: 'IT & AI Solutions',
-        title: 'Aurum Jewelry E-commerce',
-        description: 'A premium, high-converting e-commerce platform for a luxury jewelry brand, featuring intricate product galleries and secure checkout.',
-        image: itAurum,
-        technologies: ['MongoDB', 'Express', 'React', 'Node.js'],
-        outcome: 'Enhanced brand perception and 20% increase in average ticket size'
+        title: 'Gyantrika Labs Platform',
+        description: 'An innovative EdTech platform to build future skills with AI, Robotics, and Experiential Learning. Transforming schools into innovation ecosystems with NEP 2020 aligned, industry-driven, and student-focused courses, plus future-ready lab infrastructure.',
+        image: itGyantrika,
+        technologies: ['React', 'Node.js', 'AI & Robotics', 'EdTech'],
+        outcome: 'Trusted by 2000+ students and implemented 15+ real-world projects in progressive schools.',
+        link: 'https://gyantrika.com/'
     },
     {
         id: 2,
         category: 'IT & AI Solutions',
-        title: 'Assam Tea Marketplace',
-        description: 'A direct-to-consumer marketplace for authentic Assam teas, focusing on regional heritage and subscription models.',
-        image: itAssamTea,
-        technologies: ['React', 'Node.js', 'HTML'],
-        outcome: 'Connected 50+ garden estates directly to global consumers'
+        title: 'Envionix',
+        description: 'Instant toxicity insights, anywhere. Detect heavy metals and contaminants in water, soil, and food on-site with real-time results. No lab required.',
+        image: itEnvionix,
+        technologies: ['React', 'Data Science', 'IoT'],
+        outcome: 'Revolutionizing environmental intelligence with compact, field-ready solutions',
+        link: 'https://www.envionix.co.in/'
     },
     {
         id: 3,
         category: 'IT & AI Solutions',
-        title: 'Bloom & Gift Portal',
-        description: 'Handcrafted floral and gift delivery platform with real-time inventory management across multiple locations.',
-        image: itBloomGift,
-        technologies: ['MongoDB', 'Express', 'React', 'Node.js'],
-        outcome: '99% on-time delivery rate during peak holidays'
+        title: 'Olatus Systems',
+        description: 'Empowering the Future of Core Electronics and Smart Technology. We integrate innovation, design, and embedded intelligence to build a smarter world.',
+        image: itOlatus,
+        technologies: ['React', 'Core Electronics', 'IoT'],
+        outcome: 'Leading India into the mainframe silicon trade route',
+        link: 'https://olatus.com/'
     },
     {
         id: 4,
@@ -49,16 +65,8 @@ const projects = [
         description: 'A revolutionary automated fresh juice vending machine management interface with real-time telemetry and analytics.',
         image: itVendGenius,
         technologies: ['React', 'Node.js', 'HTML'],
-        outcome: 'Automated 100% of inventory replenishments'
-    },
-    {
-        id: 5,
-        category: 'IT & AI Solutions',
-        title: 'Élysée Fashion Boutique',
-        description: 'High-end fashion boutique website with emphasis on timeless elegance and minimalist UI/UX design.',
-        image: itElysee,
-        technologies: ['MongoDB', 'React', 'HTML'],
-        outcome: 'Elevated brand image and 40% growth in international inquiries'
+        outcome: 'Automated 100% of inventory replenishments',
+        link: 'https://www.vendgenius.in/'
     },
     {
         id: 6,
@@ -86,11 +94,29 @@ const projects = [
         image: digitalCase3,
         technologies: ['Stable Diffusion', 'Concept Art', 'AI Strategy'],
         outcome: 'Viral reach through AI-tech innovation'
+    },
+    {
+        id: 9,
+        category: 'Digital Solutions',
+        title: 'UniQuest International',
+        description: 'A comprehensive digital marketing campaign for trusted study abroad consultancy, highlighting secure campuses and professional guidance.',
+        image: digitalCase4,
+        technologies: ['Social Media Marketing', 'Ad Campaigns', 'Content Strategy'],
+        outcome: 'Increased lead generation for free counselling sessions by 50%'
+    },
+    {
+        id: 10,
+        category: 'Digital Solutions',
+        title: 'The Scholar School',
+        description: 'An engaging admissions campaign poster for The Scholar School, showcasing sports facilities, laboratories, and specialized classrooms to attract young minds.',
+        image: digitalCase5,
+        technologies: ['Graphic Design', 'Social Media Strategy', 'Local SEO'],
+        outcome: 'Boosted admission inquiries for the upcoming academic year'
     }
 ];
 
 export default function OurWork() {
-    const [selectedProject, setSelectedProject] = useState<typeof projects[0] | null>(null);
+    const [selectedProject, setSelectedProject] = useState<Project | null>(null);
 
     const itProjects = projects.filter(p => p.category === 'IT & AI Solutions');
     const digitalProjects = projects.filter(p => p.category === 'Digital Solutions');
@@ -99,8 +125,8 @@ export default function OurWork() {
         <main className="min-h-screen bg-background">
             <SEO
                 title="Our Work - Portfolio & Case Studies"
-                description="Explore ByteFlow's portfolio of successful IT solutions and digital marketing campaigns. See how we've helped businesses transform digitally and achieve measurable growth."
-                keywords="ByteFlow portfolio, IT projects, digital marketing case studies, web development portfolio, successful campaigns"
+                description="Explore Byteflow DigiAi's portfolio of successful IT solutions and digital marketing campaigns. See how we've helped businesses transform digitally and achieve measurable growth."
+                keywords="Byteflow DigiAi portfolio, IT projects, digital marketing case studies, web development portfolio, successful campaigns"
                 canonicalUrl="https://www.byteflowdigiai.com/our-work"
             />
             <PageHero
@@ -206,12 +232,25 @@ export default function OurWork() {
                 <DialogContent className="max-w-4xl p-0 overflow-hidden bg-card border-none">
                     {selectedProject && (
                         <div className="flex flex-col h-full max-h-[90vh] overflow-y-auto">
-                            <div className="w-full relative">
-                                <img
-                                    src={selectedProject.image}
-                                    alt={selectedProject.title}
-                                    className="w-full h-auto object-contain"
-                                />
+                            <div className="w-full relative group">
+                                {selectedProject.link ? (
+                                    <a href={selectedProject.link} target="_blank" rel="noopener noreferrer" className="block relative group-hover:opacity-95 transition-opacity" title="Visit Website">
+                                        <img
+                                            src={selectedProject.image}
+                                            alt={selectedProject.title}
+                                            className="w-full h-auto object-contain"
+                                        />
+                                        <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity bg-black/20">
+                                            <Badge className="px-5 py-2.5 text-sm pointer-events-none shadow-xl border-none font-bold tracking-wider uppercase">Visit Website ↗</Badge>
+                                        </div>
+                                    </a>
+                                ) : (
+                                    <img
+                                        src={selectedProject.image}
+                                        alt={selectedProject.title}
+                                        className="w-full h-auto object-contain"
+                                    />
+                                )}
                                 <div className="py-1.5 bg-secondary/30 text-center border-b border-border">
                                     <span className="text-[10px] uppercase tracking-[0.2em] font-semibold text-muted-foreground">Homepage Preview</span>
                                 </div>

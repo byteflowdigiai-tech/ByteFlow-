@@ -16,7 +16,7 @@ const NotFound = () => {
     <main className="min-h-screen flex items-center justify-center bg-gradient-hero pt-20">
       <SEO
         title="Page Not Found - 404 Error"
-        description="The page you're looking for doesn't exist. Return to ByteFlow homepage to explore our IT solutions and digital marketing services."
+        description="The page you're looking for doesn't exist. Return to Byteflow DigiAi homepage to explore our IT solutions and digital marketing services."
         noindex={true}
         canonicalUrl="https://www.byteflowdigiai.com/404"
       />

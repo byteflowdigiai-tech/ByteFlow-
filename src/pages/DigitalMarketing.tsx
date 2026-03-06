@@ -55,7 +55,7 @@ const features = [
 const results = [
   { metric: '120%+', label: 'Average Traffic Increase' },
   { metric: '3x+', label: 'ROAS Improvement' },
-  { metric: '35+', label: 'Projects Completed' },
+  { metric: '5+', label: 'Projects Completed' },
   { metric: '25%+', label: 'Conversion Rate Boost' },
 ];
 

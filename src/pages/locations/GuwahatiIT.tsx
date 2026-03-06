@@ -112,7 +112,7 @@ export default function GuwahatiIT() {
                                 Why Choose a Local <span className="text-gradient-blue">Guwahati Partner?</span>
                             </h2>
                             <p className="text-lg text-muted-foreground mb-8">
-                                Working with ByteFlow means you get the best of both worlds: Global tech standards with local accountability. We are right here in the city to ensure your success.
+                                Working with Byteflow DigiAi means you get the best of both worlds: Global tech standards with local accountability. We are right here in the city to ensure your success.
                             </p>
                             <motion.ul
                                 className="space-y-4"
@@ -143,7 +143,7 @@ export default function GuwahatiIT() {
                                 <div className="w-full h-full rounded-3xl overflow-hidden glass p-4 flex items-center justify-center">
                                     <img
                                         src={benefitsInfographic}
-                                        alt="Why Partner with ByteFlow DigiAI Guwahati"
+                                        alt="Why Partner with Byteflow DigiAi Guwahati"
                                         className="w-full h-full object-contain"
                                     />
                                 </div>

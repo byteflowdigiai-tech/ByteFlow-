@@ -62,7 +62,7 @@ const marketingServices = [
 ];
 
 const stats = [
-  { value: '35+', label: 'Projects Delivered' },
+  { value: '5+', label: 'Projects Delivered' },
   { value: '98%', label: 'Client Satisfaction' },
   { value: '15+', label: 'Industries Served' },
   { value: '24/7', label: 'Support Available' },
@@ -71,7 +71,7 @@ const stats = [
 const whyChooseUs = [
   { icon: Shield, title: 'Enterprise Security', description: 'Bank-level security protocols protect your data' },
   { icon: Clock, title: 'Fast Delivery', description: 'Agile methodologies ensure rapid deployment' },
-  { icon: Users, title: 'Expert Team', description: 'Seasoned professionals with 10+ years experience' },
+  { icon: Users, title: 'Expert Team', description: 'Dedicated professionals focused on your growth' },
   { icon: Award, title: 'Proven Results', description: 'Track record of measurable business impact' },
 ];
 
@@ -79,18 +79,18 @@ export default function Index() {
   return (
     <main>
       <SEO
-        title="Digital Marketing Agency in Guwahati | SEO, Web Design & AI Automation – ByteFlow DigiAI"
-        description="ByteFlow DigiAI is a leading digital marketing agency in Guwahati offering SEO, website development, AI automation, social media marketing, and performance marketing to grow your business and generate leads."
+        title="Digital Marketing Agency in Guwahati | SEO, Web Design & AI Automation – Byteflow DigiAi"
+        description="Byteflow DigiAi is a leading digital marketing agency in Guwahati offering SEO, website development, AI automation, social media marketing, and performance marketing to grow your business and generate leads."
         keywords="digital marketing agency guwahati, seo company guwahati, web design company guwahati, website development guwahati, ai automation guwahati, social media marketing guwahati, performance marketing guwahati, digital marketing services guwahati, seo services guwahati, best digital marketing agency guwahati"
         schemaType="LocalBusiness"
         faq={[
           {
-            question: "What services does ByteFlow DigiAI provide in Guwahati?",
+            question: "What services does Byteflow DigiAi provide in Guwahati?",
             answer: "As the best digital marketing agency in guwahati, we provide SEO services, website development, AI automation, and social media marketing to help businesses in Assam grow."
           },
           {
-            question: "Why choose ByteFlow as your SEO company in Guwahati?",
-            answer: "ByteFlow DigiAI is a top-rated seo company in guwahati with a proven track record of ranking local businesses on the first page of Google."
+            question: "Why choose Byteflow DigiAi as your SEO company in Guwahati?",
+            answer: "Byteflow DigiAi is a top-rated seo company in guwahati with a proven track record of ranking local businesses on the first page of Google."
           },
           {
             question: "Does your company provide website development in Guwahati?",
@@ -203,7 +203,7 @@ export default function Index() {
             className="text-center max-w-3xl mx-auto mb-16"
           >
             <h2 className="font-display text-3xl md:text-4xl font-bold mb-4">
-              Why Choose <span className="text-gradient-mixed">ByteFlow DigiAI</span>
+              Why Choose <span className="text-gradient-mixed">Byteflow DigiAi</span>
             </h2>
             <p className="text-lg text-muted-foreground">
               We are recognized as the best digital marketing agency in guwahati, combining

@@ -8,18 +8,18 @@ import { Dialog, DialogContent, DialogHeader, DialogTitle } from '@/components/u
 const contactInfo = [
   { icon: Mail, label: 'Email', value: 'info@byteflowdigiai.com', href: 'mailto:info@byteflowdigiai.com' },
   { icon: Mail, label: 'Support Email', value: 'byteflowdigiai@gmail.com', href: 'mailto:byteflowdigiai@gmail.com' },
-  { icon: Phone, label: 'Phone', value: '+91 6900105606', href: 'tel:+91 6900105606' },
+  { icon: Phone, label: 'Phone', value: '+91 9181015606', href: 'tel:+91 9181015606' },
   {
     icon: MapPin,
     label: 'Main Branch Address',
-    value: 'ByteFlow, 1st Floor, Neeladri Complex, 10th Cross, 2nd Main, Sampige Rd, Malleshwaram, Bengaluru, Karnataka 560003',
+    value: 'Byteflow DigiAi, 1st Floor, Neeladri Complex, 10th Cross, 2nd Main, Sampige Rd, Malleshwaram, Bengaluru, Karnataka 560003',
     mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.498418049618!2d77.56846507507693!3d12.99266108732483!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae163ec061730d%3A0x6ca78680c656667!2sMalleshwaram%2C%20Bengaluru%2C%20Karnataka%20560003!5e0!3m2!1sen!2sin!4v1704473600000!5m2!1sen!2sin",
     href: 'https://goo.gl/maps/bengaluru'
   },
   {
     icon: MapPin,
     label: 'Sub Branch Address',
-    value: 'ByteFlow , 101 , 1st Floor , Guwahati Research Park , 781034',
+    value: 'Byteflow DigiAi , 101 , 1st Floor , Guwahati Research Park , 781034',
     mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3580.332349319349!2d91.6888463753599!3d26.192318077085734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x375a50785718765f%3A0xc6a8f3523588f72c!2sIndian%20Institute%20of%20Technology%20Guwahati!5e0!3m2!1sen!2sin!4v1704473800000!5m2!1sen!2sin",
     href: '#'
   },
@@ -31,9 +31,9 @@ export default function Contact() {
   return (
     <main>
       <SEO
-        title="Contact Us | ByteFlow DigiAI Office Bengaluru & Guwahati"
-        description="Get in touch with ByteFlow DigiAI. Visit our offices in Bengaluru or Guwahati for world-class IT and digital marketing services. Email: byteflowdigiai@gmail.com."
-        keywords="ByteFlow office Bengaluru, ByteFlow GuwahatiAddress, digital marketing agency Guwahati, IT services Bengaluru, contact ByteFlow DigiAI, best IT company Assam"
+        title="Contact Us | Byteflow DigiAi Office Bengaluru & Guwahati"
+        description="Get in touch with Byteflow DigiAi. Visit our offices in Bengaluru or Guwahati for world-class IT and digital marketing services. Email: byteflowdigiai@gmail.com."
+        keywords="Byteflow DigiAi office Bengaluru, Byteflow DigiAi GuwahatiAddress, digital marketing agency Guwahati, IT services Bengaluru, contact Byteflow DigiAi, best IT company Assam"
         schemaType="LocalBusiness"
       />
       <PageHero

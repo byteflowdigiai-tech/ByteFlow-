@@ -69,7 +69,7 @@ export default function Hero() {
         >
           <img
             src={heroImage}
-            alt="SEO Services in Guwahati ByteFlow DigiAI"
+            alt="SEO Services in Guwahati Byteflow DigiAi"
             className="w-full h-full object-cover"
             width={1920}
             height={1080}
@@ -105,7 +105,7 @@ export default function Hero() {
             className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6"
           >
             Digital Marketing, SEO, Web Development &{' '}
-            <span className="text-gradient-mixed">AI Automation Company in Guwahati</span>
+            <span className="text-gradient-mixed">AI Automation</span>
           </motion.h1>
 
           {/* Subtitle */}
@@ -115,7 +115,7 @@ export default function Hero() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto mb-10"
           >
-            ByteFlow DigiAI delivers cutting-edge IT & AI solutions and data-driven digital marketing
+            Byteflow DigiAi delivers cutting-edge IT & AI solutions and data-driven digital marketing
             strategies to accelerate your business growth.
           </motion.p>
 
@@ -127,12 +127,12 @@ export default function Hero() {
             className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16"
           >
             <Link to="/book-consultation">
-              <Button size="lg" className="rounded-xl bg-gradient-to-r from-blue-royal to-green-emerald hover:opacity-90 transition-opacity group px-8" aria-label="Get started by booking a consultation with ByteFlow">
+              <Button size="lg" className="rounded-xl bg-gradient-to-r from-blue-royal to-green-emerald hover:opacity-90 transition-opacity group px-8" aria-label="Get started by booking a consultation with Byteflow DigiAi">
                 Get Started
                 <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
               </Button>
             </Link>
-            <Link to="/about" aria-label="Learn more about ByteFlow DigiAI and our services">
+            <Link to="/about" aria-label="Learn more about Byteflow DigiAi and our services">
               <Button size="lg" variant="outline" className="rounded-xl px-8">
                 Learn More
               </Button>

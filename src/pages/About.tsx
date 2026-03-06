@@ -21,15 +21,15 @@ export default function About() {
     <main>
       <SEO
         title="About Us - Your Partner in Innovation"
-        description="Byteflow offers a comprehensive suite of IT and Automation Solutions alongside Digital Media Marketing. We create high-impact posters, manage social media, and run high-conversion ad campaigns."
-        keywords="about ByteFlow, IT automation, digital media marketing, social media management, ad campaigns, web development company"
+        description="Byteflow DigiAi offers a comprehensive suite of IT and Automation Solutions alongside Digital Media Marketing. We create high-impact posters, manage social media, and run high-conversion ad campaigns."
+        keywords="about Byteflow DigiAi, IT automation, digital media marketing, social media management, ad campaigns, web development company"
         canonicalUrl="https://www.byteflowdigiai.com/about"
       />
       <PageHero
-        badge="About ByteFlow DigiAI"
+        badge="About Byteflow DigiAi"
         title="Your Partner in"
         titleHighlight="Innovation"
-        subtitle="Byteflow offers a comprehensive suite of IT and Automation Solutions alongside Digital Media Marketing. We specialize in creating high-impact posters, managing social media presences, and running high-conversion ad campaigns."
+        subtitle="Byteflow DigiAi offers a comprehensive suite of IT and Automation Solutions alongside Digital Media Marketing. We specialize in creating high-impact posters, managing social media presences, and running high-conversion ad campaigns."
         theme="blue"
         variant="about"
       />
@@ -39,7 +39,7 @@ export default function About() {
           <div className="max-w-3xl mx-auto text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-display font-bold mb-6">Who We Are</h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              At Byteflow, we believe in the power of digital synergy. We provide end-to-end IT & AI solutions and advanced automation that streamline your operations. Our expert marketing team handles everything from social media management to ad creation, ensuring your brand stands out. Whether you need a custom-built website or eye-catching posters for your next campaign, we give you the tools to customize every detail.
+              At Byteflow DigiAi, we believe in the power of digital synergy. We provide end-to-end IT & AI solutions and advanced automation that streamline your operations. Our expert marketing team handles everything from social media management to ad creation, ensuring your brand stands out. Whether you need a custom-built website or eye-catching posters for your next campaign, we give you the tools to customize every detail.
             </p>
           </div>
 
