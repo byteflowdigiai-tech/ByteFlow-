@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { ArrowRight, Code2, TrendingUp } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import heroImage from '@/assets/hero-home.jpg';
+import NetworkBackground from '@/components/ui/NetworkBackground';
 
 export default function Hero() {
   return (
@@ -83,6 +84,9 @@ export default function Hero() {
       </div>
 
       <div className="absolute inset-0 bg-grid opacity-20" />
+      
+      {/* Network Particle Effect - Mobile Only */}
+      <NetworkBackground className="block md:hidden z-20 opacity-70" theme="mixed" />
 
       <div className="relative z-30 container mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <div className="max-w-5xl mx-auto text-center">
