@@ -1,12 +1,13 @@
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { Mail, Phone, MapPin, ArrowRight } from 'lucide-react';
+import { Mail, Phone, MapPin, ArrowRight, Instagram, Facebook, Linkedin } from 'lucide-react';
 import logo from '@/assets/logo.jpg';
 
 const footerLinks = {
   itSolutions: [
     { name: 'Website Building', path: '/it-solutions/website-building' },
     { name: 'AI & Automation', path: '/it-solutions/ai-automation' },
+    { name: 'ERP', path: 'https://erp.byteflowdigiai.com/' },
     { name: 'All IT & AI Solutions', path: '/it-solutions' },
   ],
   digitalMarketing: [
@@ -114,9 +115,15 @@ export default function Footer() {
             <ul className="space-y-3">
               {footerLinks.itSolutions.map((link) => (
                 <li key={link.name}>
-                  <Link to={link.path} className="text-muted-foreground hover:text-blue-cyan transition-colors">
-                    {link.name}
-                  </Link>
+                  {link.path.startsWith('http') ? (
+                    <a href={link.path} target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-blue-cyan transition-colors">
+                      {link.name}
+                    </a>
+                  ) : (
+                    <Link to={link.path} className="text-muted-foreground hover:text-blue-cyan transition-colors">
+                      {link.name}
+                    </Link>
+                  )}
                 </li>
               ))}
             </ul>
@@ -128,9 +135,15 @@ export default function Footer() {
             <ul className="space-y-3">
               {footerLinks.digitalMarketing.map((link) => (
                 <li key={link.name}>
-                  <Link to={link.path} className="text-muted-foreground hover:text-green-emerald transition-colors">
-                    {link.name}
-                  </Link>
+                  {link.path.startsWith('http') ? (
+                    <a href={link.path} target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-green-emerald transition-colors">
+                      {link.name}
+                    </a>
+                  ) : (
+                    <Link to={link.path} className="text-muted-foreground hover:text-green-emerald transition-colors">
+                      {link.name}
+                    </Link>
+                  )}
                 </li>
               ))}
             </ul>
@@ -142,9 +155,15 @@ export default function Footer() {
             <ul className="space-y-3">
               {footerLinks.company.map((link) => (
                 <li key={link.name}>
-                  <Link to={link.path} className="text-muted-foreground hover:text-foreground transition-colors">
-                    {link.name}
-                  </Link>
+                  {link.path.startsWith('http') ? (
+                    <a href={link.path} target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground transition-colors">
+                      {link.name}
+                    </a>
+                  ) : (
+                    <Link to={link.path} className="text-muted-foreground hover:text-foreground transition-colors">
+                      {link.name}
+                    </Link>
+                  )}
                 </li>
               ))}
             </ul>
@@ -156,12 +175,29 @@ export default function Footer() {
             <ul className="space-y-3">
               {footerLinks.important.map((link) => (
                 <li key={link.name}>
-                  <Link to={link.path} className="text-muted-foreground hover:text-foreground transition-colors">
-                    {link.name}
-                  </Link>
+                  {link.path.startsWith('http') ? (
+                    <a href={link.path} target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground transition-colors">
+                      {link.name}
+                    </a>
+                  ) : (
+                    <Link to={link.path} className="text-muted-foreground hover:text-foreground transition-colors">
+                      {link.name}
+                    </Link>
+                  )}
                 </li>
               ))}
             </ul>
+            <div className="flex items-center gap-4 mt-8 lg:mt-12">
+              <a href="https://www.instagram.com/byteflowdigiai/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-lg glass border border-white/5 flex items-center justify-center text-muted-foreground hover:text-pink-500 hover:border-pink-500/30 transition-all">
+                <Instagram className="w-5 h-5" />
+              </a>
+              <a href="https://www.facebook.com/share/185PeP7YVv/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-lg glass border border-white/5 flex items-center justify-center text-muted-foreground hover:text-blue-600 hover:border-blue-600/30 transition-all">
+                <Facebook className="w-5 h-5" />
+              </a>
+              <a href="https://www.linkedin.com/showcase/byteflow-digiai/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-lg glass border border-white/5 flex items-center justify-center text-muted-foreground hover:text-blue-700 hover:border-blue-700/30 transition-all">
+                <Linkedin className="w-5 h-5" />
+              </a>
+            </div>
           </div>
         </div>
 

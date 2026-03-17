@@ -27,6 +27,7 @@ const navLinks = [
   },
   { name: 'Our Work', path: '/our-work' },
   { name: 'Our Team', path: '/our-team' },
+  { name: 'ERP', path: 'https://erp.byteflowdigiai.com/' },
   { name: 'About', path: '/about' },
   { name: 'Contact', path: '/contact' },
 ];
@@ -86,16 +87,31 @@ export default function Navbar() {
                 onMouseEnter={() => link.submenu && setOpenDropdown(link.name)}
                 onMouseLeave={() => setOpenDropdown(null)}
               >
-                <Link
-                  to={link.path}
-                  className={`px-4 py-2 rounded-lg font-medium text-sm transition-all flex items-center gap-1 ${isActive(link.path)
-                    ? 'text-foreground bg-muted'
-                    : 'text-muted-foreground hover:text-foreground hover:bg-muted/50'
-                    }`}
-                >
-                  {link.name}
-                  {link.submenu && <ChevronDown className="w-4 h-4" />}
-                </Link>
+                {link.path.startsWith('http') ? (
+                  <a
+                    href={link.path}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={`px-4 py-2 rounded-lg font-medium text-sm transition-all flex items-center gap-1 ${isActive(link.path)
+                      ? 'text-foreground bg-muted'
+                      : 'text-muted-foreground hover:text-foreground hover:bg-muted/50'
+                      }`}
+                  >
+                    {link.name}
+                    {link.submenu && <ChevronDown className="w-4 h-4" />}
+                  </a>
+                ) : (
+                  <Link
+                    to={link.path}
+                    className={`px-4 py-2 rounded-lg font-medium text-sm transition-all flex items-center gap-1 ${isActive(link.path)
+                      ? 'text-foreground bg-muted'
+                      : 'text-muted-foreground hover:text-foreground hover:bg-muted/50'
+                      }`}
+                  >
+                    {link.name}
+                    {link.submenu && <ChevronDown className="w-4 h-4" />}
+                  </Link>
+                )}
 
                 {/* Dropdown */}
                 <AnimatePresence>
@@ -107,18 +123,33 @@ export default function Navbar() {
                       transition={{ duration: 0.2 }}
                       className="absolute top-full left-0 mt-1 w-56 glass-strong rounded-xl shadow-xl overflow-hidden"
                     >
-                      {link.submenu.map((sublink) => (
-                        <Link
-                          key={sublink.name}
-                          to={sublink.path}
-                          className={`block px-4 py-3 text-sm transition-colors ${isActive(sublink.path)
-                            ? 'bg-muted text-foreground'
-                            : 'text-muted-foreground hover:bg-muted/50 hover:text-foreground'
-                            }`}
-                        >
-                          {sublink.name}
-                        </Link>
-                      ))}
+                      {link.submenu.map((sublink) =>
+                        sublink.path.startsWith('http') ? (
+                          <a
+                            key={sublink.name}
+                            href={sublink.path}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className={`block px-4 py-3 text-sm transition-colors ${isActive(sublink.path)
+                              ? 'bg-muted text-foreground'
+                              : 'text-muted-foreground hover:bg-muted/50 hover:text-foreground'
+                              }`}
+                          >
+                            {sublink.name}
+                          </a>
+                        ) : (
+                          <Link
+                            key={sublink.name}
+                            to={sublink.path}
+                            className={`block px-4 py-3 text-sm transition-colors ${isActive(sublink.path)
+                              ? 'bg-muted text-foreground'
+                              : 'text-muted-foreground hover:bg-muted/50 hover:text-foreground'
+                              }`}
+                          >
+                            {sublink.name}
+                          </Link>
+                        )
+                      )}
                     </motion.div>
                   )}
                 </AnimatePresence>
@@ -128,6 +159,7 @@ export default function Navbar() {
 
           {/* Right Side */}
           <div className="flex items-center gap-2">
+
 
             <Link to="/book-consultation" className="hidden md:block">
               <Button className="rounded-xl bg-gradient-to-r from-blue-royal to-green-emerald hover:opacity-90 transition-opacity">
@@ -161,29 +193,58 @@ export default function Navbar() {
               <div className="py-6 px-4 space-y-2 max-h-[80vh] overflow-y-auto scrollbar-hide">
                 {navLinks.map((link) => (
                   <div key={link.name}>
-                    <Link
-                      to={link.path}
-                      className={`block px-4 py-3 rounded-lg font-medium transition-colors ${isActive(link.path)
-                        ? 'bg-muted text-foreground'
-                        : 'text-muted-foreground hover:bg-muted/50 hover:text-foreground'
-                        }`}
-                    >
-                      {link.name}
-                    </Link>
+                    {link.path.startsWith('http') ? (
+                      <a
+                        href={link.path}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className={`block px-4 py-3 rounded-lg font-medium transition-colors ${isActive(link.path)
+                          ? 'bg-muted text-foreground'
+                          : 'text-muted-foreground hover:bg-muted/50 hover:text-foreground'
+                          }`}
+                      >
+                        {link.name}
+                      </a>
+                    ) : (
+                      <Link
+                        to={link.path}
+                        className={`block px-4 py-3 rounded-lg font-medium transition-colors ${isActive(link.path)
+                          ? 'bg-muted text-foreground'
+                          : 'text-muted-foreground hover:bg-muted/50 hover:text-foreground'
+                          }`}
+                      >
+                        {link.name}
+                      </Link>
+                    )}
                     {link.submenu && (
                       <div className="ml-4 mt-1 space-y-1">
-                        {link.submenu.map((sublink) => (
-                          <Link
-                            key={sublink.name}
-                            to={sublink.path}
-                            className={`block px-4 py-2 rounded-lg text-sm transition-colors ${isActive(sublink.path)
-                              ? 'bg-muted text-foreground'
-                              : 'text-muted-foreground hover:bg-muted/50 hover:text-foreground'
-                              }`}
-                          >
-                            {sublink.name}
-                          </Link>
-                        ))}
+                        {link.submenu.map((sublink) =>
+                          sublink.path.startsWith('http') ? (
+                            <a
+                              key={sublink.name}
+                              href={sublink.path}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className={`block px-4 py-2 rounded-lg text-sm transition-colors ${isActive(sublink.path)
+                                ? 'bg-muted text-foreground'
+                                : 'text-muted-foreground hover:bg-muted/50 hover:text-foreground'
+                                }`}
+                            >
+                              {sublink.name}
+                            </a>
+                          ) : (
+                            <Link
+                              key={sublink.name}
+                              to={sublink.path}
+                              className={`block px-4 py-2 rounded-lg text-sm transition-colors ${isActive(sublink.path)
+                                ? 'bg-muted text-foreground'
+                                : 'text-muted-foreground hover:bg-muted/50 hover:text-foreground'
+                                }`}
+                            >
+                              {sublink.name}
+                            </Link>
+                          )
+                        )}
                       </div>
                     )}
                   </div>
@@ -193,6 +254,7 @@ export default function Navbar() {
                     Book Consultation
                   </Button>
                 </Link>
+
               </div>
             </motion.div>
           )}

@@ -55,8 +55,8 @@ export default function SEO({
             "availableLanguage": "en"
         },
         "sameAs": [
-            "https://www.facebook.com/byteflowdigiai",
-            "https://www.linkedin.com/company/byteflowdigiai",
+            "https://www.facebook.com/share/185PeP7YVv/",
+            "https://www.linkedin.com/showcase/byteflow-digiai/",
             "https://twitter.com/byteflowdigiai"
         ]
     };
